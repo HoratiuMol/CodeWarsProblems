@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="TwoSums es correcto y lo he sacado yo!">
-      <change afterPath="$PROJECT_DIR$/src/BouncingBall.java" afterDir="false" />
+    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="Válido, pero en CodeWars es tipo JavaScript, yo lo hice tipo Java">
+      <change afterPath="$PROJECT_DIR$/src/SumFct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PasamosMétodos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasamosMétodos.java" afterDir="false" />
     </list>
@@ -62,7 +62,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689800791732</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Válido, pero en CodeWars es tipo JavaScript, yo lo hice tipo Java">
+      <created>1689805657159</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689805657159</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,6 +86,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Da error de OutofBoundsException" />
     <MESSAGE value="TwoSums es correcto y lo he sacado yo!" />
-    <option name="LAST_COMMIT_MESSAGE" value="TwoSums es correcto y lo he sacado yo!" />
+    <MESSAGE value="Válido, pero en CodeWars es tipo JavaScript, yo lo hice tipo Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Válido, pero en CodeWars es tipo JavaScript, yo lo hice tipo Java" />
   </component>
 </project>
