@@ -1,35 +1,19 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+
 public class UnflattenAList_Easy {
-            public static Object[] unflatten(int[] flatArray)
-            {
-                //flatArray= new int[]{1, 2, 3, 5, 4, 2, 4, 3, 6};
-
-                Object[] objeto= new Object[]{};
-
-                for(int i=0; i<flatArray.length;){
-
-                    if(flatArray[i]<3){
-                        objeto[i]=flatArray[i];
-                        i++;
-                    }else{
-
-                        int tama=flatArray[i];
-
-                        int[] int1=new int[]{tama};
-
-                        for(int j=0;j<tama;j++){
-
-                            int1[j]=flatArray[i];
-                            i++;
-                        }
-
-                        objeto[i]=int1;
-                        //i=i+tama;
-
-                    }
-
-                }
-
-                return objeto;
-
+    static Object[] unflatten(int[] flatArray) {
+        var list = new ArrayList<>();
+        for (int i = 0; i < flatArray.length; ) {
+            if (flatArray[i] < 3) {
+                list.add(flatArray[i++]);
+            } else {
+                list.add(Arrays.copyOfRange(flatArray, i, Math.min(i += flatArray[i], flatArray.length)));
+            }
+        }
+        System.out.println(Arrays.toString(list.toArray()));
+        return list.toArray();
     }
 }
