@@ -1,10 +1,11 @@
 import static java.lang.Math.*;
 
 public class YoureASquare {
-    public static double isSquare(int n) {
+    public static boolean isSquare(int n) {
 
-        sqrt(n);
+        double d = sqrt(n);
         System.out.println(sqrt(n));
-        return sqrt(n); // fix me!
+        //return sqrt(n)%2==0; esto revisa si es par
+        return sqrt(n)%1==0; //esto mira que sea enterO!!
     }
 }
