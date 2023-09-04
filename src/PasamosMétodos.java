@@ -1,13 +1,11 @@
 import java.math.BigInteger;
+import java.sql.Array;
 
-public class PasamosMétodos extends DnaStrand{
-    public PasamosMétodos(String dna) {
-        super(dna);
-    }
+public class PasamosMétodos extends ZywOo{
 
     public static void main(String[] args) {
-        String dna="CTAT";
-        new DnaStrand("CTAT");
+        String[] arrayStr = new String[]{"sheep","sheep","sheep","sheep","sheep","wolf"};
+        warnTheSheep(arrayStr);
     }
 
 }

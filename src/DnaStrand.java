@@ -1,4 +1,4 @@
-public class DnaStrand {
+/*public class DnaStrand {
     public static String makeComplement(String dna) {
         char[] oldchar=dna.toCharArray();
         System.out.println(oldchar);
@@ -18,4 +18,4 @@ public class DnaStrand {
         }
         return String.valueOf(oldchar);;
     }
-}
+}*/
