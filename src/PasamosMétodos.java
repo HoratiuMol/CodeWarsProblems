@@ -1,11 +1,11 @@
 import java.math.BigInteger;
 import java.sql.Array;
 
-public class PasamosMétodos extends TotalPoints{
+public class PasamosMétodos extends SmallestIntegerFinder{
 
     public static void main(String[] args) {
-        String[] arrayStr = new String[]{"3:1","1:1","4:2","2:3"};
-        points(arrayStr);
+        int[] arrayStr = new int[]{5,6,7,6,-65,4,5,6,4,5,6,9};
+        findSmallestInt(arrayStr);
     }
 
 }
