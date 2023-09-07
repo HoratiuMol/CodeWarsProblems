@@ -51,7 +51,7 @@ characters only, i.e. matching the regex "[a-zA-Z]+".
 
                 int entre = Integer.parseInt(temp);
                 int dos=entre+1;
-
+//subida para no perder ritmo
                 System.out.println("dos" + dos);
                 str[i] = str[i - 1] + String.valueOf(dos);
                 System.out.println(str[i]);
