@@ -7,6 +7,18 @@ public class Positive {
 
 
     public static int sum(int[] arr){
-        return 0;
+        int suma=0;
+        if(arr.length==0){
+            suma=0;
+            return 0;
+        }else {
+            for(int i=0;i< arr.length;i++){
+                if(arr[i]>0){
+                    suma=suma+arr[i];
+                }
+            }
+        }
+        System.out.println(suma);
+        return suma;
     }
 }
