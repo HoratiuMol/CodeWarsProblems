@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="Revisar la lógica de este : CASI&#10;https://www.codewars.com/kata/5f3142b3a28d9b002ef58f5e/train/java">
-      <change afterPath="$PROJECT_DIR$/src/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PasamosMétodos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasamosMétodos.java" afterDir="false" />
+    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="Perf">
+      <change afterPath="$PROJECT_DIR$/src/Kata.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694123523664</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Perf">
+      <created>1694277971476</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1694277971476</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,6 +161,7 @@
     <MESSAGE value="Hay que revisar esto en el codewards&#10;https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/java" />
     <MESSAGE value="Guchi Prada Bro" />
     <MESSAGE value="Revisar la lógica de este : CASI&#10;https://www.codewars.com/kata/5f3142b3a28d9b002ef58f5e/train/java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revisar la lógica de este : CASI&#10;https://www.codewars.com/kata/5f3142b3a28d9b002ef58f5e/train/java" />
+    <MESSAGE value="Perf" />
+    <option name="LAST_COMMIT_MESSAGE" value="Perf" />
   </component>
 </project>

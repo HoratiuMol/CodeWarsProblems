@@ -1,11 +1,11 @@
 import java.math.BigInteger;
 import java.sql.Array;
 
-public class PasamosMétodos extends Circle{
+public class PasamosMétodos extends Kata{
 
     public static void main(String[] args) {
-        double db=1;
-        area(db);
+        int[] db={1,2,2,2};
+        squareSum(db);
     }
 
 }
