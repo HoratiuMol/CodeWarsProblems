@@ -1,11 +1,11 @@
 import java.math.BigInteger;
 import java.sql.Array;
 
-public class PasamosMétodos extends Crypto{
+public class PasamosMétodos extends Circle{
 
     public static void main(String[] args) {
-        String crpt="hhshos";
-        wordPattern(crpt);
+        double db=1;
+        area(db);
     }
 
 }
