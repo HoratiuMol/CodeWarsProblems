@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="Perf">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="6º Kyu">
       <change beforePath="$PROJECT_DIR$/src/Kata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kata.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PasamosMétodos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasamosMétodos.java" afterDir="false" />
     </list>
@@ -175,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694278741473</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="6º Kyu">
+      <created>1694370990954</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1694370990954</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +204,7 @@
     <MESSAGE value="Guchi Prada Bro" />
     <MESSAGE value="Revisar la lógica de este : CASI&#10;https://www.codewars.com/kata/5f3142b3a28d9b002ef58f5e/train/java" />
     <MESSAGE value="Perf" />
-    <option name="LAST_COMMIT_MESSAGE" value="Perf" />
+    <MESSAGE value="6º Kyu" />
+    <option name="LAST_COMMIT_MESSAGE" value="6º Kyu" />
   </component>
 </project>

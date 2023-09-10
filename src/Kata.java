@@ -42,4 +42,17 @@ For example, for [1, 2, 2] it should return 9 because 1^2+2^2+2^2=9
         return Double.parseDouble(df.format(sup));
 
     }
+
+    public static double find_average(int[] array){
+        double pro=0,proM=0;
+
+        for(int i=0;i<array.length;i++){
+            pro=pro + array[i];
+        }
+        proM=pro/array.length;
+
+        System.out.println(proM);
+        return proM;
+
+    }
 }
