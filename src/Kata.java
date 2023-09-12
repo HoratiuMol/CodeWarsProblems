@@ -162,4 +162,34 @@ The middle character(s) of the word represented as a string.
         System.out.println(res);
     return res;
     }
+
+    public static String bmi(double weight, double height) {
+        /*
+        Write function bmi that calculates body mass index (bmi = weight / height2).
+
+if bmi <= 18.5 return "Underweight"
+
+if bmi <= 25.0 return "Normal"
+
+if bmi <= 30.0 return "Overweight"
+
+if bmi > 30 return "Obese"
+         */
+        double bmi;
+        String bmiS="a";
+
+        bmi=(weight/(height*height));
+        System.out.println(bmi);
+        if(bmi<=18.5){
+            bmiS="Underweight";
+        } else if (bmi<=25.0) {
+            bmiS="Normal";
+        } else if (bmi<=30.0) {
+            bmiS="Overweight";
+        }else {
+            bmiS="Obese";
+        }
+
+        return bmiS;
+    }
 }
