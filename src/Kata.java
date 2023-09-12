@@ -88,4 +88,37 @@ Hint: Don't forget to check for bad values like null/undefined
         System.out.println(nSheeps);
         return nSheeps;
     }
+
+    public static String accum(String s) {
+        /*
+        This time no story, no theory. The examples below show you how to write function accum:
+
+Examples:
+accum("abcd") -> "A-Bb-Ccc-Dddd"
+accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+accum("cwAt") -> "C-Ww-Aaa-Tttt"
+The parameter of accum is a string which includes only letters from a..z and A..Z.
+         */
+
+        String fin="a";
+        String medio;
+        char[] cha=s.toCharArray();
+        for(int i=0;i<cha.length;i++){
+            if(i==0){
+                fin=String.valueOf(cha[i]).toUpperCase();
+
+            }else{
+                for(int j=0;j<=i;j++){
+                    if(j==0){
+                        fin=fin+"-"+ String.valueOf(cha[i]).toUpperCase();
+                    }else{
+                        fin=fin+String.valueOf(cha[i]).toLowerCase();
+                    }
+                }
+            }
+            //System.out.println(cha[i]);
+        }
+        System.out.println(fin);
+        return fin;
+    }
 }
