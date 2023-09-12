@@ -1,3 +1,5 @@
+import jdk.nashorn.api.tree.FunctionDeclarationTree;
+
 import java.text.DecimalFormat;
 
 public class Kata {
@@ -54,5 +56,36 @@ For example, for [1, 2, 2] it should return 9 because 1^2+2^2+2^2=9
         System.out.println(proM);
         return proM;
 
+    }
+    /*Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+For example,
+
+[true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  false,
+  true,  false, false, true ,
+  true,  true,  true,  true ,
+  false, false, true,  true]
+The correct answer would be 17.
+
+Hint: Don't forget to check for bad values like null/undefined
+
+     */
+
+    public static int countSheeps(Boolean[] arrayOfSheeps) {
+        int nSheeps=0;
+        Boolean b=new Boolean(true);
+        boolean value=b.booleanValue();
+
+       for(int i=0; i<arrayOfSheeps.length;i++){
+           if(arrayOfSheeps[i]==Boolean.TRUE && arrayOfSheeps[i]!=null){
+               nSheeps++;
+           }else {
+               continue;
+           }
+       }
+        System.out.println(nSheeps);
+        return nSheeps;
     }
 }
