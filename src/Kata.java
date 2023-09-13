@@ -192,4 +192,55 @@ if bmi > 30 return "Obese"
 
         return bmiS;
     }
+    public static long overTheRoad(long address, long n) {
+
+        //derecha
+        long izq=1, drc=(n*2)+2, drcT=2,total=n*2;
+
+        //izquierda
+        long izq2=(2*n)+1, drc2=2, drcT2=2;
+
+        //resultado
+        long resultado=0;
+
+        if(address%2==0) {
+
+            for (int j = 1; drc2 <= address; j++) {
+
+                izq2 = izq2 - 2;
+                drc2 = drc2 + 2;
+                drcT2 = drcT2 + 2;
+
+
+            }
+            resultado=izq2;
+            System.out.println("izq ultimo es: " + izq2);
+            System.out.println("derecha ultimo: " + total);
+            System.out.println("La respuesta es: " + izq2);
+
+            return resultado;
+
+        } else if (address%2!=0) {
+
+            for (int i = 1; izq <= address; i++) {
+
+                izq = izq + 2;
+                drc = drc - 2;
+                drcT = drcT + 2;
+
+
+            }
+            resultado=drc;
+            System.out.println("izq ultimo es: " + izq);
+            System.out.println("derecha ultimo: " + total);
+            System.out.println("La respuesta es: " + drc);
+
+            return resultado;
+
+        }else {
+            return 0;
+        }
+
+    }
+
 }

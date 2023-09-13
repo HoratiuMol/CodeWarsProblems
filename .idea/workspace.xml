@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="a la 1st">
-      <change beforePath="$PROJECT_DIR$/src/Kata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kata.java" afterDir="false" />
-    </list>
+    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="OPTIMIZAR funciona&#10;https://www.codewars.com/kata/5f0ed36164f2bc00283aed07/train/java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -235,6 +233,7 @@
     <MESSAGE value="promedio ok" />
     <MESSAGE value="Boolean.TRUE &amp;&amp; !=null //importante para evitar nulls" />
     <MESSAGE value="a la 1st" />
-    <option name="LAST_COMMIT_MESSAGE" value="a la 1st" />
+    <MESSAGE value="OPTIMIZAR funciona&#10;https://www.codewars.com/kata/5f0ed36164f2bc00283aed07/train/java" />
+    <option name="LAST_COMMIT_MESSAGE" value="OPTIMIZAR funciona&#10;https://www.codewars.com/kata/5f0ed36164f2bc00283aed07/train/java" />
   </component>
 </project>
