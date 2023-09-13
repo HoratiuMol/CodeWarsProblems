@@ -193,7 +193,18 @@ if bmi > 30 return "Obese"
         return bmiS;
     }
     public static long overTheRoad(long address, long n) {
+        //MEGA OPTIMIZACION
+        long total = n * 2;
 
+        if (address % 2 == 0) {
+            // Si la dirección es par, la dirección opuesta está en la posición impar.
+            return total - address + 1;
+        } else {
+            // Si la dirección es impar, la dirección opuesta está en la posición par.
+            return total - address + 1;
+        }
+    }
+    /*
         //derecha
         long izq=1, drc=(n*2)+2, drcT=2,total=n*2;
 
@@ -205,7 +216,7 @@ if bmi > 30 return "Obese"
 
         if(address%2==0) {
 
-            for (int j = 1; drc2 <= address; j++) {
+            for (long j = 1; drc2 <= address; j++) {
 
                 izq2 = izq2 - 2;
                 drc2 = drc2 + 2;
@@ -222,7 +233,7 @@ if bmi > 30 return "Obese"
 
         } else if (address%2!=0) {
 
-            for (int i = 1; izq <= address; i++) {
+            for (long i = 1; izq <= address; i++) {
 
                 izq = izq + 2;
                 drc = drc - 2;
@@ -240,7 +251,6 @@ if bmi > 30 return "Obese"
         }else {
             return 0;
         }
-
-    }
+    }*/
 
 }
