@@ -1,6 +1,7 @@
 import jdk.nashorn.api.tree.FunctionDeclarationTree;
 
 import java.text.DecimalFormat;
+import java.util.Arrays;
 
 public class Kata {
     /*Complete the square sum function so that it squares each number passed into it and then sums the results together.
@@ -252,5 +253,26 @@ if bmi > 30 return "Obese"
             return 0;
         }
     }*/
+
+
+        public static String[] spacey(String[] array) {
+            /*
+            Kevin is noticing his space run out! Write a function that removes the spaces from the values and returns an array showing the space decreasing.
+For example, running this function on the array ['i', 'have','no','space'] would produce ['i','ihave','ihaveno','ihavenospace']
+             */
+            String[] strN=new String[array.length];
+            System.out.println(array);
+            strN[0]=array[0];
+            for(int i=1;i< array.length;i++){
+
+                strN[i]=strN[i-1]+array[i];
+
+            }
+            System.out.println(Arrays.toString(strN));
+            return strN;
+        }
+
+
+
 
 }
