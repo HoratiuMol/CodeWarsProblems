@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="revisar clase Herbert&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg">
+    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="OPTIMIZAR para ser dinámico&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kata.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PasamosMétodos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasamosMétodos.java" afterDir="false" />
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694730381423</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="OPTIMIZAR para ser dinámico&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg">
+      <created>1694790516428</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1694790516428</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,7 +275,8 @@
     <MESSAGE value="OPTIMIZAR funciona&#10;https://www.codewars.com/kata/5f0ed36164f2bc00283aed07/train/java" />
     <MESSAGE value="MEGA OPTIMIZACION" />
     <MESSAGE value="revisar clase Herbert&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg" />
-    <option name="LAST_COMMIT_MESSAGE" value="revisar clase Herbert&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg" />
+    <MESSAGE value="OPTIMIZAR para ser dinámico&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg" />
+    <option name="LAST_COMMIT_MESSAGE" value="OPTIMIZAR para ser dinámico&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

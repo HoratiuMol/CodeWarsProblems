@@ -307,48 +307,52 @@ It can be assumed that all lists will be valid matrices, composed of lists
   numbers may include integers and/or decimal points.
 
              */
+        int l=a.length;
+        System.out.println(l);
 
-        double da00=a[0][0];
-        double da01=a[0][1];
-        double da10=a[1][0];
-        double da11=a[1][1];
+        for(int i=0;i<a.length;i++){
+            for(int j=0;j<a[i].length;j++){
 
-        double db00=b[0][0];
-        double db01=b[0][1];
-        double db10=b[1][0];
-        double db11=b[1][1];
+            }
+            System.out.println(Arrays.toString(a[i]));
+        }
+        /*
+if(a.length==b.length) {
 
-        double c00;
-        double c01;
-        double c10;
-        double c11;
+    double da00 = a[0][0];
+    double db00 = b[0][0];
+    double c00;
+    double da01 = a[0][1];
+    double db01 = b[0][1];
+    double c01;
+    double da10 = a[1][0];
+    double db10 = b[1][0];
+    double c10;
+    double da11 = a[1][1];
+    double db11 = b[1][1];
+    double c11;
 
-        System.out.println("\nMatriz 1:");
-        System.out.println("|"+da00+";"+da01+"|" + "\n|"+da10+";"+da11+"|" );
-        System.out.println("\nMatriz 2:");
-        System.out.println("|"+db00+";"+db01+"|" + "\n|"+db10+";"+db11+"|" );
+    System.out.println("\nMatriz 1:");
+    System.out.println("|" + da00 + ";" + da01 + "|" + "\n|" + da10 + ";" + da11 + "|");
+    System.out.println("\nMatriz 2:");
+    System.out.println("|" + db00 + ";" + db01 + "|" + "\n|" + db10 + ";" + db11 + "|");
 
-        System.out.println("========================================MULTIPLICAMOS========================================");
+    System.out.println("========================================MULTIPLICAMOS========================================");
+    c00 = (da00 * db00) + (da01 * db10);
+    c01 = (da00 * db01) + (da01 * db11);
+    c10 = (da10 * db00) + (da11 * db10);
+    c11 = (da10 * db01) + (da11 * db11);
+    System.out.println("========================================RESULTADO========================================");
+    double[][] resultado = new double[][]{{c00, c01}, {c10, c11}};
+    System.out.println("\nMatriz Resultado:");
+    System.out.println("|" + resultado[0][0] + ";" + resultado[0][1] + "|" + "\n|" + resultado[1][0] + ";" + resultado[1][1] + "|");
 
-        c00=(da00*db00+da00*db10)+(da01*db00+da01*db10);
+}else{
+    System.out.println("Desigual");
 
-        c01=(da00*db01+da00*db11)+(da01*db01+da01*db11);
-
-        c10=(da10*db00+da10*db10)+(da11*db00+da11*db10);
-
-        c11=(da10*db01+da10*db11)+(da11*db01+da11*db11);
-
-        System.out.println("========================================RESULTADO========================================");
-
-        double[][] resultado=new double[][]{{c00,c01},{c10,c11}};
-        System.out.println("\nMatriz Resultado:");
-        System.out.println("|"+resultado[0][0]+";"+resultado[0][1]+"|" + "\n|"+resultado[1][0]+";"+resultado[1][1]+"|" );
-
-
-        return resultado;
+    return null;
+}*/
+        return a;
     }
-
-
-
 
 }
