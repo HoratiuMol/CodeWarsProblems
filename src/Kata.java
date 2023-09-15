@@ -311,11 +311,24 @@ It can be assumed that all lists will be valid matrices, composed of lists
         System.out.println(l);
 
         for(int i=0;i<a.length;i++){
+            System.out.println("Pasamos a[i]");
             for(int j=0;j<a[i].length;j++){
 
+                System.out.println(Arrays.toString(a[i]));
+//recorremos a
+                //intentamos recorrer b
+                for( int z=0;z<b.length;z++){
+                    System.out.println("Pasamos b[z]");
+                    for(int x=0;x<b[z].length;x++){
+
+                        System.out.println(Arrays.toString(b[z]));
+
+                    }
+                }
             }
-            System.out.println(Arrays.toString(a[i]));
+           // System.out.println(Arrays.toString(a[i]));
         }
+
         /*
 if(a.length==b.length) {
 
