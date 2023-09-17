@@ -309,16 +309,15 @@ It can be assumed that all lists will be valid matrices, composed of lists
              */
         int la=a.length;
         int lb=b.length;
-        double[][] r = new double[a.length][a.length];
-        System.out.println(la);
+        double[][] r = new double[a.length][b[0].length];
         System.out.println(lb);
 
-        if (a.length >= b.length) {
+        if (a[0].length == b.length) {
 
-            for (int i = 0; i < a.length; i++) {
-                for (int j = 0; j < a[i].length; j++) {
+            for (int i = 0; i < r.length; i++) {
+                for (int j = 0; j < r[0].length; j++) {
 
-                    for (int k = 0; k < a[j].length; k++) {
+                    for (int k = 0; k < b.length; k++) {
 
                         r[i][j] += a[i][k] * b[k][j];
 
