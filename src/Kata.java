@@ -1,4 +1,5 @@
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Kata {
@@ -8,16 +9,17 @@ For example, for [1, 2, 2] it should return 9 because 1^2+2^2+2^2=9
 
 
      */
-    public static int squareSum(int[] n)
-    {int result=0,cua;
-        for(int i=0;i<n.length;i++){
-            cua=n[i]*n[i];
-            result=result+cua;
+    public static int squareSum(int[] n) {
+        int result = 0, cua;
+        for (int i = 0; i < n.length; i++) {
+            cua = n[i] * n[i];
+            result = result + cua;
 
         }
         System.out.println(result);
         return result;//Your Code
     }
+
     public static String numberToString(int num) {
         // Return a string of the number here!
         return String.valueOf(num);
@@ -25,17 +27,17 @@ For example, for [1, 2, 2] it should return 9 because 1^2+2^2+2^2=9
 
     public static double areaOfPolygonInsideCircle(double circleRadius, int numberOfSides) {
         //opcion 1: area 1 triángulo por N triángulos
-        double ladoEqui,areaT, areaTotal,ladoequiDF,areaTDF;
-        DecimalFormat df= new DecimalFormat("####.###");
+        double ladoEqui, areaT, areaTotal, ladoequiDF, areaTDF;
+        DecimalFormat df = new DecimalFormat("####.###");
 //(nr2/2) sin (2π/n) square units.
         double sen;
-        sen=Math.sin(2*Math.PI/numberOfSides);
+        sen = Math.sin(2 * Math.PI / numberOfSides);
         double sup;
 
 
-        sup=((numberOfSides*(circleRadius*circleRadius))/2)*sen;
+        sup = ((numberOfSides * (circleRadius * circleRadius)) / 2) * sen;
         System.out.println("seno :" + sen);
-        System.out.println("superficie :"+ sup);
+        System.out.println("superficie :" + sup);
         df.format(sup);
         System.out.println("superfi :" + df.format(sup));
         //S=(1/2)*N*r^2*sen(360/N)
@@ -44,13 +46,13 @@ For example, for [1, 2, 2] it should return 9 because 1^2+2^2+2^2=9
 
     }
 
-    public static double find_average(int[] array){
-        double pro=0,proM=0;
+    public static double find_average(int[] array) {
+        double pro = 0, proM = 0;
 
-        for(int i=0;i<array.length;i++){
-            pro=pro + array[i];
+        for (int i = 0; i < array.length; i++) {
+            pro = pro + array[i];
         }
-        proM=pro/array.length;
+        proM = pro / array.length;
 
         System.out.println(proM);
         return proM;
@@ -73,17 +75,17 @@ Hint: Don't forget to check for bad values like null/undefined
      */
 
     public static int countSheeps(Boolean[] arrayOfSheeps) {
-        int nSheeps=0;
-        Boolean b=new Boolean(true);
-        boolean value=b.booleanValue();
+        int nSheeps = 0;
+        Boolean b = new Boolean(true);
+        boolean value = b.booleanValue();
 
-       for(int i=0; i<arrayOfSheeps.length;i++){
-           if(arrayOfSheeps[i]==Boolean.TRUE && arrayOfSheeps[i]!=null){
-               nSheeps++;
-           }else {
-               continue;
-           }
-       }
+        for (int i = 0; i < arrayOfSheeps.length; i++) {
+            if (arrayOfSheeps[i] == Boolean.TRUE && arrayOfSheeps[i] != null) {
+                nSheeps++;
+            } else {
+                continue;
+            }
+        }
         System.out.println(nSheeps);
         return nSheeps;
     }
@@ -99,19 +101,19 @@ accum("cwAt") -> "C-Ww-Aaa-Tttt"
 The parameter of accum is a string which includes only letters from a..z and A..Z.
          */
 
-        String fin="a";
+        String fin = "a";
         String medio;
-        char[] cha=s.toCharArray();
-        for(int i=0;i<cha.length;i++){
-            if(i==0){
-                fin=String.valueOf(cha[i]).toUpperCase();
+        char[] cha = s.toCharArray();
+        for (int i = 0; i < cha.length; i++) {
+            if (i == 0) {
+                fin = String.valueOf(cha[i]).toUpperCase();
 
-            }else{
-                for(int j=0;j<=i;j++){
-                    if(j==0){
-                        fin=fin+"-"+ String.valueOf(cha[i]).toUpperCase();
-                    }else{
-                        fin=fin+String.valueOf(cha[i]).toLowerCase();
+            } else {
+                for (int j = 0; j <= i; j++) {
+                    if (j == 0) {
+                        fin = fin + "-" + String.valueOf(cha[i]).toUpperCase();
+                    } else {
+                        fin = fin + String.valueOf(cha[i]).toLowerCase();
                     }
                 }
             }
@@ -121,6 +123,7 @@ The parameter of accum is a string which includes only letters from a..z and A..
         return fin;
 
     }
+
     public static String getMiddle(String word) {
         /*
         You are going to be given a word. Your job is to return the middle character of the word.
@@ -146,20 +149,20 @@ in some test cases due to an error in the test cases). You do not need to test f
 The middle character(s) of the word represented as a string.
          */
 
-        int n=word.length();
-        String res="1";
+        int n = word.length();
+        String res = "1";
         System.out.println(n);
 
-        char[] cha=word.toCharArray();
-        if(n%2!=0){
-            res= String.valueOf(cha[(n/2)]);
-        } else if (n%2==0) {
+        char[] cha = word.toCharArray();
+        if (n % 2 != 0) {
+            res = String.valueOf(cha[(n / 2)]);
+        } else if (n % 2 == 0) {
 
-            res=String.valueOf(cha[(n/2)-1]) + String.valueOf(cha[(n/2)]) ;
+            res = String.valueOf(cha[(n / 2) - 1]) + String.valueOf(cha[(n / 2)]);
 
         }
         System.out.println(res);
-    return res;
+        return res;
     }
 
     public static String bmi(double weight, double height) {
@@ -175,22 +178,23 @@ if bmi <= 30.0 return "Overweight"
 if bmi > 30 return "Obese"
          */
         double bmi;
-        String bmiS="a";
+        String bmiS = "a";
 
-        bmi=(weight/(height*height));
+        bmi = (weight / (height * height));
         System.out.println(bmi);
-        if(bmi<=18.5){
-            bmiS="Underweight";
-        } else if (bmi<=25.0) {
-            bmiS="Normal";
-        } else if (bmi<=30.0) {
-            bmiS="Overweight";
-        }else {
-            bmiS="Obese";
+        if (bmi <= 18.5) {
+            bmiS = "Underweight";
+        } else if (bmi <= 25.0) {
+            bmiS = "Normal";
+        } else if (bmi <= 30.0) {
+            bmiS = "Overweight";
+        } else {
+            bmiS = "Obese";
         }
 
         return bmiS;
     }
+
     public static long overTheRoad(long address, long n) {
         //MEGA OPTIMIZACION
         long total = n * 2;
@@ -253,22 +257,22 @@ if bmi > 30 return "Obese"
     }*/
 
 
-        public static String[] spacey(String[] array) {
+    public static String[] spacey(String[] array) {
             /*
             Kevin is noticing his space run out! Write a function that removes the spaces from the values and returns an array showing the space decreasing.
 For example, running this function on the array ['i', 'have','no','space'] would produce ['i','ihave','ihaveno','ihavenospace']
              */
-            String[] strN=new String[array.length];
-            System.out.println(array);
-            strN[0]=array[0];
-            for(int i=1;i< array.length;i++){
+        String[] strN = new String[array.length];
+        System.out.println(array);
+        strN[0] = array[0];
+        for (int i = 1; i < array.length; i++) {
 
-                strN[i]=strN[i-1]+array[i];
+            strN[i] = strN[i - 1] + array[i];
 
-            }
-            System.out.println(Arrays.toString(strN));
-            return strN;
         }
+        System.out.println(Arrays.toString(strN));
+        return strN;
+    }
 
     public static double[][] getMatrixProduct(double[][] a, double[][] b) {
 
@@ -307,8 +311,8 @@ It can be assumed that all lists will be valid matrices, composed of lists
   numbers may include integers and/or decimal points.
 
              */
-        int la=a.length;
-        int lb=b.length;
+        int la = a.length;
+        int lb = b.length;
         double[][] r = new double[a.length][b[0].length];
         System.out.println(lb);
 
@@ -326,11 +330,54 @@ It can be assumed that all lists will be valid matrices, composed of lists
                 }//end of j loop
                 System.out.println();
             }
-        }else{
+        } else {
             System.out.println("Matriz invalida");
             return null;
         }
         return r;
     }
+    // Write a public static function `greet` that returns "hello world!"
+            /*
+            Your task is to convert strings to how they would be written by Jaden Smith.
+            The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.
 
+Example:
+
+Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
+Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
+Note that the Java version expects a return value of null for an empty string or null.
+             */
+
+    public static String toJadenCase(String phrase) {
+        // TODO put your code below this comment
+
+
+        if (phrase == null) {
+            return null;
+        } else if ((phrase.isEmpty())) {
+            return null;
+        } else {
+            char[] ch = new char[phrase.length()];
+
+            for (int i = 0; i < phrase.length(); i++) {
+                ch[i] = phrase.charAt(i);
+                if(i==0 && Character.isLowerCase(ch[i])){
+                    ch[i]=Character.toUpperCase(ch[i]);
+                }
+            }
+
+            for (int j = 1; j < ch.length; j++) {
+
+                if (Character.isWhitespace(ch[j - 1]) && Character.isLowerCase(ch[j])){
+
+                    ch[j] = Character.toUpperCase(ch[j]);
+                }
+            }
+
+            System.out.println(ch);
+
+            return String.valueOf(ch);
+        }
+    }
 }
+
