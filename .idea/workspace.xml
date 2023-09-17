@@ -251,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694799415631</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="OPTIMIZAR para ser dinámico&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg">
+      <created>1694801713288</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1694801713289</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
