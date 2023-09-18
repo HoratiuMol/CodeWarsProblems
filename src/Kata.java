@@ -374,10 +374,55 @@ Note that the Java version expects a return value of null for an empty string or
                 }
             }
 
+            System.out.println("hey! if you reaxd this, you must now\n");
+            System.out.println("that you are amazing, to much actually");
+
             System.out.println(ch);
 
             return String.valueOf(ch);
         }
+
+
+    }
+    public static boolean isValid(String idn){
+        /*
+        Here is the syntax for valid identifiers:
+Each identifier must have at least one character.
+The first character must be picked from: alpha, underscore, or dollar sign. The first character cannot be a digit.
+The rest of the characters (besides the first) can be from: alpha, digit, underscore, or dollar sign. In other words, it can be any valid identifier character.
+Examples of valid identifiers:
+i
+wo_rd
+b2h
+Examples of invalid identifiers:
+1i
+wo rd
+!b2h
+         */
+
+        char[] ch=idn.toCharArray();
+        String uno= String.valueOf(ch[0]);
+
+        //System.out.println(ch);
+
+        if(uno.matches("[a-z]") || uno.matches("[$]"))
+        {
+            for(int i=0;i<ch.length;i++){
+                String dos= String.valueOf(ch[i]);
+                if(dos.matches("[ ]")){
+                    System.out.println("Espacio");
+                    break;
+                }else{
+                    continue;
+                }
+
+            }
+           return true;
+        }else if(uno.matches("[A-Z]")||uno.matches("[0-9]")){
+            System.out.println("numero");
+            return false;
+        }
+        return false;
     }
 }
 

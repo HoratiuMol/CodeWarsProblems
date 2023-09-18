@@ -5,8 +5,8 @@ public class PasamosMétodos extends Kata{
 
     public static void main(String[] args) {
 
-        String jaden="most trees are blue";
-        toJadenCase(jaden);
+        String str="1$hganfas";
+        isValid(str);
     }
 
 
