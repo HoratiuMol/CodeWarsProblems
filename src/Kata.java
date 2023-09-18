@@ -384,7 +384,7 @@ Note that the Java version expects a return value of null for an empty string or
 
 
     }
-    public static boolean isValid(String idn){
+    public static boolean isValid(String idn) {
         /*
         Here is the syntax for valid identifiers:
 Each identifier must have at least one character.
@@ -399,28 +399,31 @@ Examples of invalid identifiers:
 wo rd
 !b2h
          */
-
-        char[] ch=idn.toCharArray();
-        String uno= String.valueOf(ch[0]);
-
-        //System.out.println(ch);
-
-        if(uno.matches("[a-z]") || uno.matches("[$]"))
-        {
-            for(int i=0;i<ch.length;i++){
-                String dos= String.valueOf(ch[i]);
-                if(dos.matches("[ ]")){
-                    System.out.println("Espacio");
-                    break;
-                }else{
-                    continue;
-                }
-
-            }
-           return true;
-        }else if(uno.matches("[A-Z]")||uno.matches("[0-9]")){
-            System.out.println("numero");
+        if(idn.isBlank() || idn.isEmpty()){
             return false;
+        }else if (idn != null) {
+            char[] ch = idn.toCharArray();
+            String uno = String.valueOf(ch[0]);
+
+            //System.out.println(ch);
+
+            if (uno.matches("[a-z]") || uno.matches("[$_]")) {
+                for (int i = 0; i < ch.length; i++) {
+                    String dos = String.valueOf(ch[i]);
+                    if (dos.matches(" ")) {
+                        System.out.println("Espacio");
+                        return false;
+                    } else {
+                        continue;
+                    }
+
+                }
+                return true;
+            } else if (uno.matches("[A-Z]") || uno.matches("[0-9]")) {
+                System.out.println("numero");
+                return false;
+            }
+            return true;
         }
         return false;
     }
