@@ -1,12 +1,12 @@
 import java.math.BigInteger;
 import java.sql.Array;
 
-public class PasamosMétodos extends Kata{
+public class PasamosMétodos extends Kata2{
 
     public static void main(String[] args) {
 
-        String str="1$hganfas";
-        isValid(str);
+        String str="codewarriors";
+        solve(str);
     }
 
 
