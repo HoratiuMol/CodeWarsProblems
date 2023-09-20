@@ -8,38 +8,36 @@ public class Kata2 {
 
 Good luck!
          */
-        int substring1=0,substring2=0;
+        int substring1=1,substring2=0;
 
         char[] cha=s.toCharArray();
         int[] matriz = new int[cha.length];
-        matriz[0]=0;
+        matriz[0]=1;
 
-        if(s.startsWith("[a,e,i,o,u]")){
-            substring1=1;
-        }else{
-            substring1=0;
-        }
 
         for(int j=1;j<cha.length;j++){
 
             if(String.valueOf(cha[j-1]).matches("[a,e,i,o,u]") && String.valueOf(cha[j]).matches("[a,e,i,o,u]")){
                 substring1++;
             }else{
-                substring1=0;
+                substring1=1;
             }
+            //System.out.println("\n sub:" + substring1 + "\n");
             matriz[j]=substring1;
-
         }
 
-        int mayor=0;
+        int mayor=matriz[0];
         for(int k=1;k<matriz.length;k++){
-            if(matriz[k]>matriz[k-1]){
-                mayor=matriz[k];
+            int medio,fin;
+            medio=Integer.valueOf(matriz[k-1]);
+            fin=Integer.valueOf(matriz[k]);
+            if(fin>mayor){
+                mayor=fin;
             }
-
+            System.out.println(mayor);
         }
 
-        System.out.println(mayor);
+        System.out.println("\n Mayor final " +mayor);
 
         return mayor;
     }
