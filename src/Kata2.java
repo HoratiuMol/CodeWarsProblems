@@ -8,42 +8,39 @@ public class Kata2 {
 
 Good luck!
          */
-        int a=0;
-        int e=0;
-        int o=0;
-        int i=0;
-        int u=0;
-        int total=0;
+        int substring1=0,substring2=0;
 
         char[] cha=s.toCharArray();
+        int[] matriz = new int[cha.length];
+        matriz[0]=0;
 
-        for(int j=0;j<cha.length;j++){
+        if(s.startsWith("[a,e,i,o,u]")){
+            substring1=1;
+        }else{
+            substring1=0;
+        }
 
-            String str=String.valueOf(cha[i]);
+        for(int j=1;j<cha.length;j++){
 
-            if(str.matches("[a]")){
-                a=a+1;
-            }else if(String.valueOf(cha[i]).matches("e")){
-                e=e+1;
-            }else if(String.valueOf(cha[i]).matches("i")){
-                i=i+1;
-            }else if(String.valueOf(cha[i]).matches("o")){
-                o=o+1;
-            }
-            else if(String.valueOf(cha[i]).matches("u")){
-                u=u+1;
+            if(String.valueOf(cha[j-1]).matches("[a,e,i,o,u]") && String.valueOf(cha[j]).matches("[a,e,i,o,u]")){
+                substring1++;
             }else{
+                substring1=0;
+            }
+            matriz[j]=substring1;
 
+        }
+
+        int mayor=0;
+        for(int k=1;k<matriz.length;k++){
+            if(matriz[k]>matriz[k-1]){
+                mayor=matriz[k];
             }
 
         }
 
-        System.out.println("\na : " + a);
-        System.out.println("\ne : " + e);
-        System.out.println("\ni : " + i);
-        System.out.println("\no : " + o);
-        System.out.println("\nu : " + u);
+        System.out.println(mayor);
 
-        return 0;
+        return mayor;
     }
 }
