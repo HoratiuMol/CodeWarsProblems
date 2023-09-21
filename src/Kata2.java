@@ -120,26 +120,36 @@ If you enjoyed this kata more advanced and generalized version of it can be foun
  enthusiast and for showing me this mathematical curiosity too with his usual contagious passion :)]
 
          */
-        double[] a=new double[n];
 
+        double[] a=new double[n];
         int sig;
-        if(s.length>=2){
+
+        if(n<3 && n!=0) {
+            for(int i=1;i<n;i++){
+                a[i]=s[i-1]+s[i];
+                System.out.println("n<3 : " + a[i] + "\n");
+            }
+
+        }else if(s.length>=2 && n!=0){
             for(int k=0;k<3;k++){
                 a[k]=s[k];
             }
-        }else{
-            System.out.println("Rango no válido\n");
-            return a;
         }
 
-        //tribonaci simple primero
-        for(int i=3;i<n;i++){
+        if(n>=3 && n!=0) {
+            //tribonaci simple primero
+            for (int i = 3; i < n; i++) {
 
-            sig= (int) (a[i-3]+a[i-1]+a[i-2]);
-            a[i]=sig;
-        }
-        for(int j=0;j<a.length;j++){
-            System.out.println(a[j]);
+                sig = (int) (a[i - 3] + a[i - 1] + a[i - 2]);
+                a[i] = sig;
+            }
+            for (int j = 0; j <a.length; j++) {
+                    System.out.println(a[j]);
+            }
+
+        }else if(n==0){
+            System.out.println("0");
+            return null;
         }
 
         return a;
