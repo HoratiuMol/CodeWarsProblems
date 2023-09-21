@@ -5,8 +5,9 @@ public class PasamosMétodos extends Kata2{
 
     public static void main(String[] args) {
 
-        int a=6,b=19;
-        solve2(a,b);
+        int a=9;
+        double[] b=new double[]{1,1,1};
+        tribonacci(b,a);
     }
 
 
