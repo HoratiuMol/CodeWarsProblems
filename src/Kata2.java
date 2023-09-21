@@ -56,7 +56,7 @@ More examples in tests cases. Good luck!
 Please also try Simple time difference
          */
 
-        int[] c= {a,b};
+        /*int[] c= {a,b};
         int i=0;
         //&&(c[0]<2*b)&&(c[1]<2*a)
         while((c[0]!=0 && c[1]!=0)||((c[0]<2*b)&&(c[1]<2*a))){
@@ -77,7 +77,21 @@ Please also try Simple time difference
         System.out.println("Nos ha tomado " + i + " ciclos\n");
         System.out.println(c[0]);
         System.out.println(c[1]);
-        return  c;
+        return  c;*/
+//MEGAOPTIMIZACION POR CHATGPT: EXPLICACIÓN CHAT EN EL COMMIT
+        int[] c = {a, b};
+
+        while (c[0] > 0 && c[1] > 0) {
+            if (c[0] >= 2 * c[1]) {
+                c[0] %= 2 * c[1];
+            } else if (c[1] >= 2 * c[0]) {
+                c[1] %= 2 * c[0];
+            } else {
+                break;
+            }
+        }
+
+        return c;
 
     }
 }
