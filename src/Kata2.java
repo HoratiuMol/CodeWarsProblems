@@ -59,24 +59,47 @@ Please also try Simple time difference
         int[] c= {1,2};
         
         if(a==0||b==0){
-            c= new int[]{a, b};
+            c[0]=a;
+            c[1]=b;
         } else if (a>=2*b){
             a=a-2*b;
             if(a==0 || b==0){
-                c= new int[]{a, b};
+                c[0]=a;
             } else if (b>=2*a) {
                 b=b-2*a;
                 if(a==0 || b==0){
-                    c=new int[]{a,b};
+                    c[1]=b;
                 }else {
-                    c=new int[]{a,b};
+                    c[0]=a;
+                    c[1]=b;
                 }
+            }
+        }else if(a>=2*b) {
+            a = a - 2 * b;
+            if (a == 0 || b == 0) {
+                c[0]=a;
+            } else if (b >= 2 * a) {
+                b = b - 2 * a;
+                if (a == 0 || b == 0) {
+                    c[1]=b;
+                } else {
+                    c[0]=a;
+                    c[1]=b;
+                }
+            }
+        } else if(b >= 2 * a) {
+            b = b - 2 * a;
+            if (a == 0 || b == 0) {
+                c[1]=b;
+            } else {
+                c[0]=a;
+                c[1]=b;
             }
         }
 
-        System.out.println(c);
+        System.out.println(c[0]);
+        System.out.println(c[1]);
         return  c;
-
 
     }
 }
