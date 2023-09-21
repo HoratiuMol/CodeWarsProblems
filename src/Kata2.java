@@ -59,13 +59,18 @@ Please also try Simple time difference
         int[] c= {a,b};
         int i=0;
         //&&(c[0]<2*b)&&(c[1]<2*a)
-        while(c[0]!=0 && c[1]!=0){
+        while((c[0]!=0 && c[1]!=0)||((c[0]<2*b)&&(c[1]<2*a))){
             if(c[0]>=2*c[1]){
                 int a1=c[0]-2*c[1];
                 c[0]=a1;
             } else if ((c[1]>=2*c[0])) {
                 int b1=c[1]-2*c[0];
                 c[1]=b1;
+            }else{
+                System.out.println("salida bucle While \n");
+                System.out.println(c[0]);
+                System.out.println(c[1]);
+                return c;
             }
             i++;
         }
