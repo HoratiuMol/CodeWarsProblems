@@ -56,46 +56,46 @@ More examples in tests cases. Good luck!
 Please also try Simple time difference
          */
 
-        int[] c= {1,2};
+        int[] c= {a,b};
+
         
-        if(a==0||b==0){
-            c[0]=a;
-            c[1]=b;
-        } else if (a>=2*b){
-            a=a-2*b;
-            if(a==0 || b==0){
-                c[0]=a;
-            } else if (b>=2*a) {
-                b=b-2*a;
-                if(a==0 || b==0){
-                    c[1]=b;
+        if(a==0||b==0) {
+
+            System.out.println("Ambos son 0: \n");
+            return c;
+        } else if (a>=(a-2*b)) {
+            int a1;
+            a1=a-2*b;
+            c[0]=a1;
+            if(a1==0||b==0) {
+                c[0] = a1;
+                System.out.println("Calculamos a=a-2*b : \n");
+                System.out.println(c[0]);
+                System.out.println(c[1]);
+                return c;
+            } else if (b>=(2*a)) {
+                int b1;
+                b1=b-(a+a);
+                c[1]=b1;
+                if(a==0||b1==0) {
+
+                    c[1] = b1;
+                    System.out.println("Calculamos b=b-2*a : \n");
+                    System.out.println(c[0]);
+                    System.out.println(c[1]);
+                    return c;
                 }else {
-                    c[0]=a;
-                    c[1]=b;
+
+                    System.out.println("Fin de flujo IF: \n");
+                    System.out.println(c[0]);
+                    System.out.println(c[1]);
+                    return c;
                 }
+
             }
-        }else if(a>=2*b) {
-            a = a - 2 * b;
-            if (a == 0 || b == 0) {
-                c[0]=a;
-            } else if (b >= 2 * a) {
-                b = b - 2 * a;
-                if (a == 0 || b == 0) {
-                    c[1]=b;
-                } else {
-                    c[0]=a;
-                    c[1]=b;
-                }
-            }
-        } else if(b >= 2 * a) {
-            b = b - 2 * a;
-            if (a == 0 || b == 0) {
-                c[1]=b;
-            } else {
-                c[0]=a;
-                c[1]=b;
-            }
+
         }
+
 
         System.out.println(c[0]);
         System.out.println(c[1]);
