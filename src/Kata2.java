@@ -41,4 +41,42 @@ Good luck!
 
         return mayor;
     }
+
+    public static int [] solve2(int a, int b){
+        /*
+        In this Kata, you will be given two positive integers a and b and your task will be to apply the following operations:
+
+i) If a = 0 or b = 0, return [a,b]. Otherwise, go to step (ii);
+ii) If a ≥ 2*b, set a = a - 2*b, and repeat step (i). Otherwise, go to step (iii);
+iii) If b ≥ 2*a, set b = b - 2*a, and repeat step (i). Otherwise, return [a,b].
+a and b will both be lower than 10E8.
+
+More examples in tests cases. Good luck!
+
+Please also try Simple time difference
+         */
+
+        int[] c= {1,2};
+        
+        if(a==0||b==0){
+            c= new int[]{a, b};
+        } else if (a>=2*b){
+            a=a-2*b;
+            if(a==0 || b==0){
+                c= new int[]{a, b};
+            } else if (b>=2*a) {
+                b=b-2*a;
+                if(a==0 || b==0){
+                    c=new int[]{a,b};
+                }else {
+                    c=new int[]{a,b};
+                }
+            }
+        }
+
+        System.out.println(c);
+        return  c;
+
+
+    }
 }
