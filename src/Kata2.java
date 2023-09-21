@@ -57,46 +57,19 @@ Please also try Simple time difference
          */
 
         int[] c= {a,b};
-
-        
-        if(a==0||b==0) {
-
-            System.out.println("Ambos son 0: \n");
-            return c;
-        } else if (a>=(a-2*b)) {
-            int a1;
-            a1=a-2*b;
-            c[0]=a1;
-            if(a1==0||b==0) {
-                c[0] = a1;
-                System.out.println("Calculamos a=a-2*b : \n");
-                System.out.println(c[0]);
-                System.out.println(c[1]);
-                return c;
-            } else if (b>=(2*a)) {
-                int b1;
-                b1=b-(a+a);
+        int i=0;
+        //&&(c[0]<2*b)&&(c[1]<2*a)
+        while(c[0]!=0 && c[1]!=0){
+            if(c[0]>=2*c[1]){
+                int a1=c[0]-2*c[1];
+                c[0]=a1;
+            } else if ((c[1]>=2*c[0])) {
+                int b1=c[1]-2*c[0];
                 c[1]=b1;
-                if(a==0||b1==0) {
-
-                    c[1] = b1;
-                    System.out.println("Calculamos b=b-2*a : \n");
-                    System.out.println(c[0]);
-                    System.out.println(c[1]);
-                    return c;
-                }else {
-
-                    System.out.println("Fin de flujo IF: \n");
-                    System.out.println(c[0]);
-                    System.out.println(c[1]);
-                    return c;
-                }
-
             }
-
+            i++;
         }
-
-
+        System.out.println("Nos ha tomado " + i + " ciclos\n");
         System.out.println(c[0]);
         System.out.println(c[1]);
         return  c;
