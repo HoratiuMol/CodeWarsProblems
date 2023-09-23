@@ -1,5 +1,10 @@
+import jdk.jshell.execution.Util;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Kata2 {
-    public static int solve(String s){
+    public static int solve(String s) {
         /*
         The vowel substrings in the word codewarriors are o,e,a,io.
          The longest of these has a length of 2. Given a lowercase string that has
@@ -8,41 +13,41 @@ public class Kata2 {
 
 Good luck!
          */
-        int substring1=1,substring2=0;
+        int substring1 = 1, substring2 = 0;
 
-        char[] cha=s.toCharArray();
+        char[] cha = s.toCharArray();
         int[] matriz = new int[cha.length];
-        matriz[0]=1;
+        matriz[0] = 1;
 
 
-        for(int j=1;j<cha.length;j++){
+        for (int j = 1; j < cha.length; j++) {
 
-            if(String.valueOf(cha[j-1]).matches("[a,e,i,o,u]") && String.valueOf(cha[j]).matches("[a,e,i,o,u]")){
+            if (String.valueOf(cha[j - 1]).matches("[a,e,i,o,u]") && String.valueOf(cha[j]).matches("[a,e,i,o,u]")) {
                 substring1++;
-            }else{
-                substring1=1;
+            } else {
+                substring1 = 1;
             }
             //System.out.println("\n sub:" + substring1 + "\n");
-            matriz[j]=substring1;
+            matriz[j] = substring1;
         }
 
-        int mayor=matriz[0];
-        for(int k=1;k<matriz.length;k++){
-            int medio,fin;
-            medio=Integer.valueOf(matriz[k-1]);
-            fin=Integer.valueOf(matriz[k]);
-            if(fin>mayor){
-                mayor=fin;
+        int mayor = matriz[0];
+        for (int k = 1; k < matriz.length; k++) {
+            int medio, fin;
+            medio = Integer.valueOf(matriz[k - 1]);
+            fin = Integer.valueOf(matriz[k]);
+            if (fin > mayor) {
+                mayor = fin;
             }
             System.out.println(mayor);
         }
 
-        System.out.println("\n Mayor final " +mayor);
+        System.out.println("\n Mayor final " + mayor);
 
         return mayor;
     }
 
-    public static int [] solve2(int a, int b){
+    public static int[] solve2(int a, int b) {
         /*
         In this Kata, you will be given two positive integers a and b and your task will be to apply the following operations:
 
@@ -120,7 +125,7 @@ If you enjoyed this kata more advanced and generalized version of it can be foun
  enthusiast and for showing me this mathematical curiosity too with his usual contagious passion :)]
 
          */
-
+/*
         double[] a=new double[n];
         int sig;
 
@@ -153,5 +158,33 @@ If you enjoyed this kata more advanced and generalized version of it can be foun
         }
 
         return a;
+    }*/
+
+        double[] a = new double[n];
+        double[] sig = new double[3];
+        double[] arr=new double[0];
+
+        if (n == 0) {
+            System.out.println("0");
+            return arr;
+        }
+
+        for (int i = 0; i < n; i++) {
+            if (i < s.length) {
+                a[i] = s[i];
+                sig[i % 3] = s[i];
+            } else {
+                double next = sig[0] + sig[1] + sig[2];
+                a[i] = next;
+                sig[i % 3] = next;
+            }
+        }
+        for (int j = 0; j <a.length; j++) {
+            System.out.println(a[j]);
+        }
+
+        return a;
     }
+
+
 }
