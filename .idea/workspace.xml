@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="tribonaci funciona, para la situación específica de condiciones perfectas.">
+    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="el gran error que me daba eran dos.&#10;1: No devolvía un empty array ya que tenia new double[3] (vacío) y tenía que ser new double[0].&#10;2:es que al ser un double muy largo, debía guardar tan solo los 3 últimos resultados en un array a parte del originals que se está calculando.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kata2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kata2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PasamosMétodos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasamosMétodos.java" afterDir="false" />
@@ -378,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695337915013</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="el gran error que me daba eran dos.&#10;1: No devolvía un empty array ya que tenia new double[3] (vacío) y tenía que ser new double[0].&#10;2:es que al ser un double muy largo, debía guardar tan solo los 3 últimos resultados en un array a parte del originals que se está calculando.">
+      <created>1695463961908</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1695463961908</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,7 +400,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Hay que revisar esto en el codewards&#10;https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/java" />
     <MESSAGE value="Guchi Prada Bro" />
     <MESSAGE value="Revisar la lógica de este : CASI&#10;https://www.codewars.com/kata/5f3142b3a28d9b002ef58f5e/train/java" />
     <MESSAGE value="Perf" />
@@ -418,6 +424,7 @@
     <MESSAGE value="Funciona, pero en Code Wars da TIMEOUT:&#10;OPTIMIZAR" />
     <MESSAGE value="MEGA OPTIMIZADO POR CHAT" />
     <MESSAGE value="tribonaci funciona, para la situación específica de condiciones perfectas." />
-    <option name="LAST_COMMIT_MESSAGE" value="tribonaci funciona, para la situación específica de condiciones perfectas." />
+    <MESSAGE value="el gran error que me daba eran dos.&#10;1: No devolvía un empty array ya que tenia new double[3] (vacío) y tenía que ser new double[0].&#10;2:es que al ser un double muy largo, debía guardar tan solo los 3 últimos resultados en un array a parte del originals que se está calculando." />
+    <option name="LAST_COMMIT_MESSAGE" value="el gran error que me daba eran dos.&#10;1: No devolvía un empty array ya que tenia new double[3] (vacío) y tenía que ser new double[0].&#10;2:es que al ser un double muy largo, debía guardar tan solo los 3 últimos resultados en un array a parte del originals que se está calculando." />
   </component>
 </project>
