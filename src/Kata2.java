@@ -1,6 +1,7 @@
 import jdk.jshell.execution.Util;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Kata2 {
@@ -184,6 +185,19 @@ If you enjoyed this kata more advanced and generalized version of it can be foun
         }
 
         return a;
+    }
+
+    public static int countPassengers(ArrayList<int[]> stops) {
+        int enBus=0;
+
+        for(int i=0;i<stops.size();i++){
+            int sube= stops.get(i)[0];
+            int bajan=stops.get(i)[1];
+            System.out.println(sube);
+            enBus=enBus+sube-bajan;
+            System.out.println(enBus);
+        }
+        return enBus;
     }
 
 
