@@ -245,7 +245,36 @@ finance(7) --> 252
 finance(5000) --> 62537505000
 
              */
-            return BigInteger.valueOf(2);
+
+        /*week has n days
+        day one of next week I save +1 than the same day
+
+--	Su	Mo	Tu	We	Th	Fr	Sa
+W6							12
+W5						10	11
+W4					8	9	10
+W3				6	7	8	9
+W2			4	5	6	7	8
+W1		2	3	4	5	6	7
+W0	0	1	2	3	4	5	6
+
+         */
+
+        long ahorros=0L;
+        long diasSemana=n;
+        long semanas=n;
+
+        for(int i=0;i<semanas-i;n++){
+            int nivel=2*i;
+            //recorremos las semanas
+            for(int j=0;j<(diasSemana-i);j++){
+                ahorros=ahorros+i;
+            }
+
+            System.out.println("nivel :"+nivel+"\n");
+        }
+        System.out.println(ahorros);
+        return BigInteger.valueOf(ahorros);
     }
 
 }
