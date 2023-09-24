@@ -6,8 +6,9 @@ public class PasamosMétodos extends Kata2{
 
     public static void main(String[] args) {
 
+        int a=2;
 
-        setAlarm(true, false);
+        finance(a);
 
     }
 
