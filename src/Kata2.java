@@ -261,19 +261,20 @@ W0	0	1	2	3	4	5	6
          */
 
         long ahorros=0L;
-        long diasSemana=n;
-        long semanas=n;
+        long calculoNivel;
 
-        for(int i=0;i<semanas-i;n++){
-            int nivel=2*i;
+        for(long i=0L;i<=n;i++){
+             calculoNivel=0;
             //recorremos las semanas
-            for(int j=0;j<(diasSemana-i);j++){
-                ahorros=ahorros+i;
+            for(long j=i*2;j<=n+i;j++){
+                calculoNivel=calculoNivel+j;
             }
-
-            System.out.println("nivel :"+nivel+"\n");
+           // System.out.println("calculo semana " +i+ " : "+calculoNivel+"\n");
+            ahorros=ahorros+calculoNivel;
+            //System.out.println("nivel :"+i +"\n" +"Inicio nivel : "+i*2+"\n");
         }
-        System.out.println(ahorros);
+
+        System.out.println("El calculo de los ahorros es: "+ahorros);
         return BigInteger.valueOf(ahorros);
     }
 
