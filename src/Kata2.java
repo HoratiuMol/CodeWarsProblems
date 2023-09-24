@@ -289,23 +289,27 @@ Examples
 [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
          */
         int r=0;
-        int[][] mat=new int[a.length][a.length];
+        int[][] mat=new int[a.length][2];
         int rep=0;
 
         for(int i=1;i<a.length;i++){
             if(a[i-1]==a[i]){
                 rep++;
-                mat[i][0]=a[i];
+                mat[i][0]=Integer.valueOf(a[i]);
                 mat[i][1]=rep;
+            }else if(a[i-1]!=a[i]){
+                mat[i][0]=Integer.valueOf(a[i]);
+                mat[i][1]=rep+1;
             }
         }
-        for(int j=0;j< mat.length;j++){
+
+        for(int j=0;j<mat.length;j++){
             for(int k=0;k<mat[j].length;k++){
-
-                System.out.println("["+ Arrays.toString(mat[j])+","+Arrays.toString(mat[k])+"]\n");
+                System.out.println("["+mat[j][0]+","+mat[j][1]+"]\n");
             }
 
         }
+
         System.out.println("el número único es: " +r);
         return r;
     }
