@@ -1,6 +1,3 @@
-import jdk.jshell.execution.Util;
-
-import java.lang.reflect.Array;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -276,6 +273,41 @@ W0	0	1	2	3	4	5	6
 
         System.out.println("El calculo de los ahorros es: "+ahorros);
         return BigInteger.valueOf(ahorros);
+    }
+
+    public static int findIt(int[] a) {
+        /*
+        Given an array of integers, find the one that appears an odd number of times.
+
+There will always be only one integer that appears an odd number of times.
+
+Examples
+[7] should return 7, because it occurs 1 time (which is odd).
+[0] should return 0, because it occurs 1 time (which is odd).
+[1,1,2] should return 2, because it occurs 1 time (which is odd).
+[0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
+[1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
+         */
+        int r=0;
+        int[][] mat=new int[a.length][a.length];
+        int rep=0;
+
+        for(int i=1;i<a.length;i++){
+            if(a[i-1]==a[i]){
+                rep++;
+                mat[i][0]=a[i];
+                mat[i][1]=rep;
+            }
+        }
+        for(int j=0;j< mat.length;j++){
+            for(int k=0;k<mat[j].length;k++){
+
+                System.out.println("["+ Arrays.toString(mat[j])+","+Arrays.toString(mat[k])+"]\n");
+            }
+
+        }
+        System.out.println("el número único es: " +r);
+        return r;
     }
 
 }
