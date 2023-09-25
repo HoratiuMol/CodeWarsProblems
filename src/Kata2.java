@@ -291,7 +291,7 @@ Examples
         int r=0;
        int[][] mat=new int[a.length][2];
        // ArrayList<int[][]> el=new ArrayList<>();
-        //int rep=0;
+        int rep=0;
        // mat[0][0]=a[0];
         //mat[0][0]=0;
         for(int x=0;x<a.length;x++){
@@ -299,25 +299,27 @@ Examples
         }
         for(int k=1;k<mat.length;k++){
             if(mat[k-1][0]==mat[k][0]){
-                mat[k][1]++;
+                rep++;
+                mat[k][1]=rep;
+            }else if(mat[k-1][0]!=mat[k][0]){
+                rep=0;
+            }
+        }
+        System.out.println("===================================================");
+        int [] intRes= new int[mat.length];
+        for(int i=0;i<mat.length;i++){
+            intRes[i]=mat[i][1];
+           // System.out.println("matriz " + mat[i][1]);
+            System.out.println("resultado " + intRes[i] +"\n");
+        }
+        for(int i=1;i< intRes.length;i++){
+            if(intRes[i]==0 && intRes[i-1]%2==0){
+                r=intRes[i-1];
             }
         }
         System.out.println("===================================================");
 
-        /*for(int i=0;i<a.length;i++){
-            for(int j=0;j<mat.length;j++){
-                if(a[i]==mat[j][0]){
-                    mat[j][1]++;
-                }else if(a[i]!=mat[j][0]){
-                    mat[j][0]=a[i];
-                }
-            }
-        }*/
-        System.out.println("===================================================");
 
-        for(int k=0;k<mat.length;k++){
-            System.out.println("["+mat[k][0]+","+mat[k][1]+"]\n");
-        }
         System.out.println("el número único es: " +r);
         return r;
     }

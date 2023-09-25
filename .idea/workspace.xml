@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="intento for8while9">
+    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="mejorado, cerca, falta sumar bien">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kata2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kata2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PasamosMétodos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasamosMétodos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +55,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689634908240</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Hay que revisar esto en el codewards&#10;https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/java">
-      <created>1693509067762</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1693509067762</updated>
     </task>
     <task id="LOCAL-00006" summary="Hay que revisar esto en el codewards&#10;https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/java">
       <created>1693691828679</created>
@@ -400,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695667783077</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="mejorado, cerca, falta sumar bien">
+      <created>1695670112787</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1695670112787</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,7 +414,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="a la 1st" />
     <MESSAGE value="OPTIMIZAR funciona&#10;https://www.codewars.com/kata/5f0ed36164f2bc00283aed07/train/java" />
     <MESSAGE value="MEGA OPTIMIZACION" />
     <MESSAGE value="revisar clase Herbert&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg" />
@@ -440,6 +438,7 @@
     <MESSAGE value="ver cómo" />
     <MESSAGE value="un poco mejorado" />
     <MESSAGE value="intento for8while9" />
-    <option name="LAST_COMMIT_MESSAGE" value="intento for8while9" />
+    <MESSAGE value="mejorado, cerca, falta sumar bien" />
+    <option name="LAST_COMMIT_MESSAGE" value="mejorado, cerca, falta sumar bien" />
   </component>
 </project>
