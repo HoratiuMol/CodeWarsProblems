@@ -288,40 +288,26 @@ Examples
 [0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
 [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
          */
-        int r=0;
+        int r=0,n=0;
+
+        int resultado=0;
        int[][] mat=new int[a.length][2];
-       // ArrayList<int[][]> el=new ArrayList<>();
-        int rep=0;
-       // mat[0][0]=a[0];
-        //mat[0][0]=0;
-        for(int x=0;x<a.length;x++){
-            mat[x][0]=a[x];
-        }
-        for(int k=1;k<mat.length;k++){
-            if(mat[k-1][0]==mat[k][0]){
-                rep++;
-                mat[k][1]=rep;
-            }else if(mat[k-1][0]!=mat[k][0]){
-                rep=0;
-            }
-        }
-        System.out.println("===================================================");
-        int [] intRes= new int[mat.length];
-        for(int i=0;i<mat.length;i++){
-            intRes[i]=mat[i][1];
-           // System.out.println("matriz " + mat[i][1]);
-            System.out.println("resultado " + intRes[i] +"\n");
-        }
-        for(int i=1;i< intRes.length;i++){
-            if(intRes[i]==0 && intRes[i-1]%2==0){
-                r=intRes[i-1];
-            }
-        }
-        System.out.println("===================================================");
+        int rep;
+       for(int i=0;i<a.length;i++){
+           for(int j=i+1;j<a.length;j++){
+               if(a[i]==a[j]){
+                   mat[j][0]=a[i];
+                   mat[j][1]++;
+               }
+           }
+       }
+       for(int i=0;i<mat.length;i++){
+           System.out.println("["+mat[i][0]+","+mat[i][1]+"]\n");
+       }
+        System.out.println("se dan " + n +" numeros distintos\n");
 
-
-        System.out.println("el número único es: " +r);
-        return r;
+        System.out.println("el número único es: " +resultado + " y el numero de repeticiones es " +r);
+        return resultado;
     }
 
 }
