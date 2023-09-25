@@ -6,7 +6,7 @@ public class PasamosMétodos extends Kata2{
 
     public static void main(String[] args) {
 
-        int[] a=new int[] {1,2,3,3,3,1};
+        int[] a=new int[] {1,1,2,2,2,2,2,3,3,3,3};
 
         findIt(a);
 

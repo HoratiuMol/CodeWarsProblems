@@ -289,26 +289,35 @@ Examples
 [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
          */
         int r=0;
-        int[][] mat=new int[a.length][2];
-
-
-        for(int i=1;i<a.length;i++){
-            int rep=0;
-            while(a[i-1]==a[i]){
-                rep++;
-                mat[i][0]=a[i];
-                mat[i][1]=rep;
-            }
-
+       int[][] mat=new int[a.length][2];
+       // ArrayList<int[][]> el=new ArrayList<>();
+        //int rep=0;
+       // mat[0][0]=a[0];
+        //mat[0][0]=0;
+        for(int x=0;x<a.length;x++){
+            mat[x][0]=a[x];
         }
-
-        for(int j=0;j<mat.length;j++){
-            for(int k=0;k<mat[j].length;k++){
-                System.out.println("["+mat[j][0]+","+mat[j][1]+"]\n");
+        for(int k=1;k<mat.length;k++){
+            if(mat[k-1][0]==mat[k][0]){
+                mat[k][1]++;
             }
-
         }
+        System.out.println("===================================================");
 
+        /*for(int i=0;i<a.length;i++){
+            for(int j=0;j<mat.length;j++){
+                if(a[i]==mat[j][0]){
+                    mat[j][1]++;
+                }else if(a[i]!=mat[j][0]){
+                    mat[j][0]=a[i];
+                }
+            }
+        }*/
+        System.out.println("===================================================");
+
+        for(int k=0;k<mat.length;k++){
+            System.out.println("["+mat[k][0]+","+mat[k][1]+"]\n");
+        }
         System.out.println("el número único es: " +r);
         return r;
     }
