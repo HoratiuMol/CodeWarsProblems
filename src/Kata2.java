@@ -291,20 +291,24 @@ Examples
         int r=0,n=0;
 
         int resultado=0;
-       int[][] mat=new int[a.length][2];
+       String[] mat=new String[a.length];
         int rep;
        for(int i=0;i<a.length;i++){
-           for(int j=i+1;j<a.length;j++){
-               if(a[i]==a[j]){
-                   mat[j][0]=a[i];
-                   mat[j][1]++;
+           mat[i]=String.valueOf(a[i]);
+           }
+       for(int i=0;i<a.length;i++){
+           for(int j=i;j< mat.length;j++){
+               if(Integer.parseInt(mat[i])==a[i]){
+                   r++;
+                   System.out.println("El numero i es " + a[i] +" y :"+mat[j]);
                }
            }
        }
-       for(int i=0;i<mat.length;i++){
-           System.out.println("["+mat[i][0]+","+mat[i][1]+"]\n");
+
+       /*for(int i=0;i<mat.length;i++){
+           System.out.println("["+mat[i]+"]\n");
        }
-        System.out.println("se dan " + n +" numeros distintos\n");
+        System.out.println("se dan " + n +" numeros distintos\n");*/
 
         System.out.println("el número único es: " +resultado + " y el numero de repeticiones es " +r);
         return resultado;
