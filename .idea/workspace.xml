@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="nada ,seguir con ello">
+    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="intento ocn string, llegamos al mismo punto, tiene que ser con array lists">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kata2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kata2.java" afterDir="false" />
     </list>
@@ -55,13 +55,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689634908240</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Hay que revisar esto en el codewards&#10;https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/java">
-      <created>1693857818176</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1693857818176</updated>
     </task>
     <task id="LOCAL-00009" summary="Guchi Prada Bro">
       <created>1693942135413</created>
@@ -399,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695672811861</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="intento ocn string, llegamos al mismo punto, tiene que ser con array lists">
+      <created>1695685356159</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1695685356159</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -414,7 +414,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="revisar clase Herbert&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg" />
     <MESSAGE value="OPTIMIZAR para ser dinámico&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg" />
     <MESSAGE value="HECHO&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg" />
     <MESSAGE value="HECHO" />
@@ -439,6 +438,7 @@
     <MESSAGE value="mejorado, cerca, falta sumar bien" />
     <MESSAGE value="mejorado, cerca, falta sumar bien. tengo el resultado, me falta el número" />
     <MESSAGE value="nada ,seguir con ello" />
-    <option name="LAST_COMMIT_MESSAGE" value="nada ,seguir con ello" />
+    <MESSAGE value="intento ocn string, llegamos al mismo punto, tiene que ser con array lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="intento ocn string, llegamos al mismo punto, tiene que ser con array lists" />
   </component>
 </project>

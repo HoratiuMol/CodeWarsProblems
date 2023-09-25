@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -292,19 +293,30 @@ Examples
 
         int resultado=0;
        String[] mat=new String[a.length];
-        int rep;
-       for(int i=0;i<a.length;i++){
-           mat[i]=String.valueOf(a[i]);
+        ArrayList<int[]> arr=new ArrayList<>();
+        int[] firstArr={a[0],0};
+        arr.add(firstArr);
+
+        //la pinta que tiene es
+        // arr={{1,2},{1,2}}
+       for(int i=1;i<a.length;i++){
+           if(a[i-1]!=a[i]){
+               int[] a1={a[i],0};
+               arr.add(a1);
            }
-       for(int i=0;i<a.length;i++){
-           for(int j=i;j< mat.length;j++){
-               if(Integer.parseInt(mat[i])==a[i]){
-                   r++;
-                   System.out.println("El numero i es " + a[i] +" y :"+mat[j]);
+       }
+       for(int i=0;i<arr.size();i++){
+           for(int j=i;j<arr.size();j++){
+               if(arr.get(i)==arr.get(j)){
+                   int[] a2={a[i],+1};
+                   arr.add(a2);
                }
            }
        }
 
+       for(int i=0;i<arr.size();i++){
+           System.out.println(Arrays.toString(arr.get(i)));
+       }
        /*for(int i=0;i<mat.length;i++){
            System.out.println("["+mat[i]+"]\n");
        }
