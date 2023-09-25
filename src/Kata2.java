@@ -290,17 +290,16 @@ Examples
          */
         int r=0;
         int[][] mat=new int[a.length][2];
-        int rep=0;
+
 
         for(int i=1;i<a.length;i++){
-            if(a[i-1]==a[i]){
+            int rep=0;
+            while(a[i-1]==a[i]){
                 rep++;
-                mat[i][0]=Integer.valueOf(a[i]);
+                mat[i][0]=a[i];
                 mat[i][1]=rep;
-            }else if(a[i-1]!=a[i]){
-                mat[i][0]=Integer.valueOf(a[i]);
-                mat[i][1]=rep+1;
             }
+
         }
 
         for(int j=0;j<mat.length;j++){
