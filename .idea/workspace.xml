@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="solo falta el especal String str =&quot;&quot;">
+    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="Perfceto. &#10;fallaba la asignación al &quot;String a&quot; ya que el string que nos pasaba estaba vacío, ergo no se puede asignar un string vacío a un char">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kata2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kata2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PasamosMétodos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasamosMétodos.java" afterDir="false" />
@@ -56,13 +56,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689634908240</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Revisar la lógica de este : CASI&#10;https://www.codewars.com/kata/5f3142b3a28d9b002ef58f5e/train/java">
-      <created>1694036944261</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1694036944261</updated>
     </task>
     <task id="LOCAL-00012" summary="Revisar la lógica de este : CASI&#10;https://www.codewars.com/kata/5f3142b3a28d9b002ef58f5e/train/java">
       <created>1694123523664</created>
@@ -400,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695843655298</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Perfceto. &#10;fallaba la asignación al &quot;String a&quot; ya que el string que nos pasaba estaba vacío, ergo no se puede asignar un string vacío a un char">
+      <created>1695844323736</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1695844323736</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,7 +415,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HECHO&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg" />
     <MESSAGE value="HECHO" />
     <MESSAGE value="mejorar" />
     <MESSAGE value="CORRECTO&#10;POSIBLE OPTIMIZACION" />
@@ -440,6 +439,7 @@
     <MESSAGE value="nada ,seguir con ello" />
     <MESSAGE value="intento ocn string, llegamos al mismo punto, tiene que ser con array lists" />
     <MESSAGE value="solo falta el especal String str =&quot;&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="solo falta el especal String str =&quot;&quot;" />
+    <MESSAGE value="Perfceto. &#10;fallaba la asignación al &quot;String a&quot; ya que el string que nos pasaba estaba vacío, ergo no se puede asignar un string vacío a un char" />
+    <option name="LAST_COMMIT_MESSAGE" value="Perfceto. &#10;fallaba la asignación al &quot;String a&quot; ya que el string que nos pasaba estaba vacío, ergo no se puede asignar un string vacío a un char" />
   </component>
 </project>

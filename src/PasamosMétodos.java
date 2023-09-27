@@ -6,8 +6,11 @@ public class PasamosMétodos extends Kata2{
 
     public static void main(String[] args) {
 
-        String str="";
-        alphanumeric(str);
+        int a=2000;
+        int b=8000;
+        int c=1000;
+        double d=1.5;
+        nbMonths(a,b,c,d);
 
     }
 
