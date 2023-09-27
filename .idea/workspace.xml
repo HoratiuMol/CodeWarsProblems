@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="intento ocn string, llegamos al mismo punto, tiene que ser con array lists">
+    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="solo falta el especal String str =&quot;&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kata2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kata2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PasamosMétodos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasamosMétodos.java" afterDir="false" />
@@ -56,13 +56,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689634908240</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Guchi Prada Bro">
-      <created>1693943601865</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1693943601865</updated>
     </task>
     <task id="LOCAL-00011" summary="Revisar la lógica de este : CASI&#10;https://www.codewars.com/kata/5f3142b3a28d9b002ef58f5e/train/java">
       <created>1694036944261</created>
@@ -400,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695686372152</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="solo falta el especal String str =&quot;&quot;">
+      <created>1695843655298</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1695843655298</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,7 +415,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="OPTIMIZAR para ser dinámico&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg" />
     <MESSAGE value="HECHO&#10;&#10;https://www.youtube.com/watch?v=MfN1lqArwAg" />
     <MESSAGE value="HECHO" />
     <MESSAGE value="mejorar" />
@@ -440,6 +439,7 @@
     <MESSAGE value="mejorado, cerca, falta sumar bien. tengo el resultado, me falta el número" />
     <MESSAGE value="nada ,seguir con ello" />
     <MESSAGE value="intento ocn string, llegamos al mismo punto, tiene que ser con array lists" />
-    <option name="LAST_COMMIT_MESSAGE" value="intento ocn string, llegamos al mismo punto, tiene que ser con array lists" />
+    <MESSAGE value="solo falta el especal String str =&quot;&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="solo falta el especal String str =&quot;&quot;" />
   </component>
 </project>
