@@ -409,7 +409,7 @@ We don't take care of a deposit of savings in a bank:-)
         //+0,5% every 2 months
 
         double percentEvery2 = 0.5;
-        int[] nbMonths=new int[]{};
+        int[] nbMonths2=new int[10];
         double vOld=startPriceOld;
         double vNew=startPriceNew;
         double vMes=percentLossByMonth;
@@ -419,7 +419,6 @@ We don't take care of a deposit of savings in a bank:-)
             } else if (i%2==0) {
                 vMes=(percentLossByMonth + 0.5)/100;
             }
-
             vOld=vOld-vOld*vMes;
             vNew=vNew-vNew*vMes;
             savingperMonth=1000*i;
@@ -428,13 +427,19 @@ We don't take care of a deposit of savings in a bank:-)
                 System.out.println("El ahorro final en el mes " + i + " es de " + savingperMonth + "\n");
                 System.out.println("El precio de venta del coche final en el mes " + i + " es de " + vOld + "\n");
                 System.out.println("El precio de compra del coche final en el mes " + i + " es de " + vNew + "\n");
-                return nbMonths;
+                nbMonths2[i-1]=i;
+                for(int j=0; j< nbMonths2.length;j++){
+                    System.out.println(nbMonths2[j]);
+                }
+                return nbMonths2;
             }
             System.out.println("Nuevo ahorro en mes " + i + " es de " + savingperMonth + "\n");
             System.out.println("El precio de venta del coche en el mes " + i + " es de " + vOld + "\n");
             System.out.println("El precio de compra del coche en el mes " + i + " es de " + vNew + "\n");
+            nbMonths2[i]=i;
         }
-        return null;
+
+        return nbMonths2;
     }
 
 }
