@@ -13,38 +13,38 @@ public class Kata2 {
 
 Good luck!
          */
-            int substring1 = 1, substring2 = 0;
+        int substring1 = 1, substring2 = 0;
 
-            char[] cha = s.toCharArray();
-            int[] matriz = new int[cha.length];
-            matriz[0] = 1;
+        char[] cha = s.toCharArray();
+        int[] matriz = new int[cha.length];
+        matriz[0] = 1;
 
 
-            for (int j = 1; j < cha.length; j++) {
+        for (int j = 1; j < cha.length; j++) {
 
-                if (String.valueOf(cha[j - 1]).matches("[a,e,i,o,u]") && String.valueOf(cha[j]).matches("[a,e,i,o,u]")) {
-                    substring1++;
-                } else {
-                    substring1 = 1;
-                }
-                //System.out.println("\n sub:" + substring1 + "\n");
-                matriz[j] = substring1;
+            if (String.valueOf(cha[j - 1]).matches("[a,e,i,o,u]") && String.valueOf(cha[j]).matches("[a,e,i,o,u]")) {
+                substring1++;
+            } else {
+                substring1 = 1;
             }
+            //System.out.println("\n sub:" + substring1 + "\n");
+            matriz[j] = substring1;
+        }
 
-            int mayor = matriz[0];
-            for (int k = 1; k < matriz.length; k++) {
-                int medio, fin;
-                medio = Integer.valueOf(matriz[k - 1]);
-                fin = Integer.valueOf(matriz[k]);
-                if (fin > mayor) {
-                    mayor = fin;
-                }
-                System.out.println(mayor);
+        int mayor = matriz[0];
+        for (int k = 1; k < matriz.length; k++) {
+            int medio, fin;
+            medio = Integer.valueOf(matriz[k - 1]);
+            fin = Integer.valueOf(matriz[k]);
+            if (fin > mayor) {
+                mayor = fin;
             }
+            System.out.println(mayor);
+        }
 
-            System.out.println("\n Mayor final " + mayor);
+        System.out.println("\n Mayor final " + mayor);
 
-            return mayor;
+        return mayor;
     }
 
     public static int[] solve2(int a, int b) {
@@ -162,7 +162,7 @@ If you enjoyed this kata more advanced and generalized version of it can be foun
 
         double[] a = new double[n];
         double[] sig = new double[3];
-        double[] arr=new double[0];
+        double[] arr = new double[0];
 
         if (n == 0) {
             System.out.println("0");
@@ -179,7 +179,7 @@ If you enjoyed this kata more advanced and generalized version of it can be foun
                 sig[i % 3] = next;
             }
         }
-        for (int j = 0; j <a.length; j++) {
+        for (int j = 0; j < a.length; j++) {
             System.out.println(a[j]);
         }
 
@@ -187,13 +187,13 @@ If you enjoyed this kata more advanced and generalized version of it can be foun
     }
 
     public static int countPassengers(ArrayList<int[]> stops) {
-        int enBus=0;
+        int enBus = 0;
 
-        for(int i=0;i<stops.size();i++){
-            int sube= stops.get(i)[0];
-            int bajan=stops.get(i)[1];
+        for (int i = 0; i < stops.size(); i++) {
+            int sube = stops.get(i)[0];
+            int bajan = stops.get(i)[1];
             System.out.println(sube);
-            enBus=enBus+sube-bajan;
+            enBus = enBus + sube - bajan;
             System.out.println(enBus);
         }
         return enBus;
@@ -214,11 +214,11 @@ false    | true     => false
 false    | false    => false
          */
 
-        if(employed==false){
+        if (employed == false) {
             return false;
-        } else if (employed==true && vacation==false){
+        } else if (employed == true && vacation == false) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
@@ -258,21 +258,21 @@ W0	0	1	2	3	4	5	6
 
          */
 
-        long ahorros=0L;
+        long ahorros = 0L;
         long calculoNivel;
 
-        for(long i=0L;i<=n;i++){
-             calculoNivel=0;
+        for (long i = 0L; i <= n; i++) {
+            calculoNivel = 0;
             //recorremos las semanas
-            for(long j=i*2;j<=n+i;j++){
-                calculoNivel=calculoNivel+j;
+            for (long j = i * 2; j <= n + i; j++) {
+                calculoNivel = calculoNivel + j;
             }
-           // System.out.println("calculo semana " +i+ " : "+calculoNivel+"\n");
-            ahorros=ahorros+calculoNivel;
+            // System.out.println("calculo semana " +i+ " : "+calculoNivel+"\n");
+            ahorros = ahorros + calculoNivel;
             //System.out.println("nivel :"+i +"\n" +"Inicio nivel : "+i*2+"\n");
         }
 
-        System.out.println("El calculo de los ahorros es: "+ahorros);
+        System.out.println("El calculo de los ahorros es: " + ahorros);
         return BigInteger.valueOf(ahorros);
     }
 
@@ -289,40 +289,40 @@ Examples
 [0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
 [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
          */
-        int r=0,n=0;
+        int r = 0, n = 0;
 
-        int resultado=0;
-       String[] mat=new String[a.length];
-        ArrayList<int[]> arr=new ArrayList<>();
-        int[] firstArr={a[0],0};
+        int resultado = 0;
+        String[] mat = new String[a.length];
+        ArrayList<int[]> arr = new ArrayList<>();
+        int[] firstArr = {a[0], 0};
         arr.add(firstArr);
 
         //la pinta que tiene es
         // arr={{1,2},{1,2}}
-       for(int i=1;i<a.length;i++){
-           if(a[i-1]!=a[i]){
-               int[] a1={a[i],0};
-               arr.add(a1);
-           }
-       }
-       for(int i=0;i<arr.size();i++){
-           for(int j=i;j<arr.size();j++){
-               if(arr.get(i)==arr.get(j)){
-                   int[] a2={a[i],+1};
-                   arr.add(a2);
-               }
-           }
-       }
+        for (int i = 1; i < a.length; i++) {
+            if (a[i - 1] != a[i]) {
+                int[] a1 = {a[i], 0};
+                arr.add(a1);
+            }
+        }
+        for (int i = 0; i < arr.size(); i++) {
+            for (int j = i; j < arr.size(); j++) {
+                if (arr.get(i) == arr.get(j)) {
+                    int[] a2 = {a[i], +1};
+                    arr.add(a2);
+                }
+            }
+        }
 
-       for(int i=0;i<arr.size();i++){
-           System.out.println(Arrays.toString(arr.get(i)));
-       }
+        for (int i = 0; i < arr.size(); i++) {
+            System.out.println(Arrays.toString(arr.get(i)));
+        }
        /*for(int i=0;i<mat.length;i++){
            System.out.println("["+mat[i]+"]\n");
        }
         System.out.println("se dan " + n +" numeros distintos\n");*/
 
-        System.out.println("el número único es: " +resultado + " y el numero de repeticiones es " +r);
+        System.out.println("el número único es: " + resultado + " y el numero de repeticiones es " + r);
         return resultado;
     }
 
@@ -362,6 +362,7 @@ No whitespaces / underscore
         }
         return true;
     }
+
     public static int[] nbMonths(int startPriceOld, int startPriceNew, int savingperMonth, double percentLossByMonth) {
         /*
         Let us begin with an example:
@@ -409,26 +410,26 @@ We don't take care of a deposit of savings in a bank:-)
         //+0,5% every 2 months
 
         double percentEvery2 = 0.5;
-        int[] nbMonths2=new int[10];
-        double vOld=startPriceOld;
-        double vNew=startPriceNew;
-        double vMes=percentLossByMonth;
-        for (int i = 1; i<10; i++) {
-            if(i%2!=0){
-                vMes=percentLossByMonth/100;
-            } else if (i%2==0) {
-                vMes=(percentLossByMonth + 0.5)/100;
+        int[] nbMonths2 = new int[10];
+        double vOld = startPriceOld;
+        double vNew = startPriceNew;
+        double vMes = percentLossByMonth;
+        for (int i = 1; i < 10; i++) {
+            if (i % 2 != 0) {
+                vMes = percentLossByMonth / 100;
+            } else if (i % 2 == 0) {
+                vMes = (percentLossByMonth + 0.5) / 100;
             }
-            vOld=vOld-vOld*vMes;
-            vNew=vNew-vNew*vMes;
-            savingperMonth=1000*i;
+            vOld = vOld - vOld * vMes;
+            vNew = vNew - vNew * vMes;
+            savingperMonth = 1000 * i;
 
-            if(savingperMonth>vNew){
+            if (savingperMonth > vNew) {
                 System.out.println("El ahorro final en el mes " + i + " es de " + savingperMonth + "\n");
                 System.out.println("El precio de venta del coche final en el mes " + i + " es de " + vOld + "\n");
                 System.out.println("El precio de compra del coche final en el mes " + i + " es de " + vNew + "\n");
-                nbMonths2[i-1]=i;
-                for(int j=0; j< nbMonths2.length;j++){
+                nbMonths2[i - 1] = i;
+                for (int j = 0; j < nbMonths2.length; j++) {
                     System.out.println(nbMonths2[j]);
                 }
                 return nbMonths2;
@@ -436,32 +437,40 @@ We don't take care of a deposit of savings in a bank:-)
             System.out.println("Nuevo ahorro en mes " + i + " es de " + savingperMonth + "\n");
             System.out.println("El precio de venta del coche en el mes " + i + " es de " + vOld + "\n");
             System.out.println("El precio de compra del coche en el mes " + i + " es de " + vNew + "\n");
-            nbMonths2[i]=i;
+            nbMonths2[i] = i;
         }
 
         return nbMonths2;
     }
-    public static int solve3(String s){
+
+    public static int solve3(String s) {
         char[] cha = s.toCharArray();
-        int mayor=0;
-        int[] arr=new int[s.length()];
+        int mayor = 0;
+        int[] arr = new int[s.length()];
 
-        for(int i=0;i< cha.length;i++){
+        for (int i =0; i < cha.length; i++) {
+            if (String.valueOf(cha[i]).matches("[0-9]")){
+                for(int j=i;j<cha.length;j++){
+                    String a=String.valueOf(cha[j]);
+                    if(String.valueOf(cha[j]).matches("[0-9]")){
+                        a= a+ String.valueOf(cha[j]);
+                    }
+                    i=j;
+                    arr[i]=Integer.parseInt(a);
+                }
 
-            if(String.valueOf(cha[i]).matches("[0-9]")){
-                arr[i]=Integer.parseInt(String.valueOf(cha[i]));
-                System.out.println("numero : "+arr[i] + "\n");
+
+                System.out.println("numero : " + arr[i] + "\n");
             }
-        }
-        mayor=arr[0];
-        for(int j=0;j<arr.length;j++){
-            if(arr[j]>mayor){
-                mayor=arr[j];
+
+            mayor = arr[0];
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[j] > mayor) {
+                    mayor = arr[j];
+                }
             }
+            System.out.println("El numero mayor es: " + mayor + "\n");
         }
-        System.out.println("El numero mayor es: " + mayor+"\n");
         return mayor;
     }
-
-
 }
