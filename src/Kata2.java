@@ -444,24 +444,25 @@ We don't take care of a deposit of savings in a bank:-)
     }
 
     public static int solve3(String s) {
+        int longitud=s.length()+1;
+        System.out.println("la longitud es de " + longitud);
         char[] cha = s.toCharArray();
         int mayor = 0;
-        int[] arr = new int[s.length()];
+        int[] arr = new int[s.length()+1];
+        String b="a";
 
-        for (int i =0; i <cha.length-1; i++) {
+
+        for (int i =0; i <cha.length; i++) {
             if (String.valueOf(cha[i]).matches("[0-9]")){
                 String a = String.valueOf(cha[i]);
                 int j=i+1;
-                while(String.valueOf(cha[j]).matches("[0-9]")) {
+                while(String.valueOf(cha[j]).matches("[0-9]") && j<cha.length-1) {
                         a = a + String.valueOf(cha[j]);
                         j++;
-
                 }
                 i = j;
                 arr[i] = Integer.parseInt(a);
             }
-
-
                 System.out.println("numero : " + arr[i] + "\n");
         }
 

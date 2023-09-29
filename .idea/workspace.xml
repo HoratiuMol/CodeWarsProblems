@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="no consigo cerrar el fucking substring">
+    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="casi, solo me falta depurarlo para una array que termina en un combo de números">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kata2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kata2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PasamosMétodos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasamosMétodos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +56,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689634908240</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Perf">
-      <created>1694278564469</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1694278564469</updated>
     </task>
     <task id="LOCAL-00017" summary="Perf">
       <created>1694278741473</created>
@@ -398,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696019836255</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="casi, solo me falta depurarlo para una array que termina en un combo de números">
+      <created>1696020265757</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1696020265757</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -413,7 +415,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="revisar" />
     <MESSAGE value="ahora si! fallaba el bucle for al final de la comprobación de la matriz" />
     <MESSAGE value="Intento inicial" />
     <MESSAGE value="mejora 1" />
@@ -438,6 +439,7 @@
     <MESSAGE value="suma de ahorros y gasto" />
     <MESSAGE value="falta en caso de que sea un número de mas de 1 cifra" />
     <MESSAGE value="no consigo cerrar el fucking substring" />
-    <option name="LAST_COMMIT_MESSAGE" value="no consigo cerrar el fucking substring" />
+    <MESSAGE value="casi, solo me falta depurarlo para una array que termina en un combo de números" />
+    <option name="LAST_COMMIT_MESSAGE" value="casi, solo me falta depurarlo para una array que termina en un combo de números" />
   </component>
 </project>

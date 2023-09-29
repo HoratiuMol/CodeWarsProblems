@@ -6,7 +6,7 @@ public class PasamosMétodos extends Kata2{
 
     public static void main(String[] args) {
 
-        String s="185lu1j8qbbb85";
+        String s="185lu1j8qbbb865";
         solve3(s);
 
     }
