@@ -13,38 +13,38 @@ public class Kata2 {
 
 Good luck!
          */
-        int substring1 = 1, substring2 = 0;
+            int substring1 = 1, substring2 = 0;
 
-        char[] cha = s.toCharArray();
-        int[] matriz = new int[cha.length];
-        matriz[0] = 1;
+            char[] cha = s.toCharArray();
+            int[] matriz = new int[cha.length];
+            matriz[0] = 1;
 
 
-        for (int j = 1; j < cha.length; j++) {
+            for (int j = 1; j < cha.length; j++) {
 
-            if (String.valueOf(cha[j - 1]).matches("[a,e,i,o,u]") && String.valueOf(cha[j]).matches("[a,e,i,o,u]")) {
-                substring1++;
-            } else {
-                substring1 = 1;
+                if (String.valueOf(cha[j - 1]).matches("[a,e,i,o,u]") && String.valueOf(cha[j]).matches("[a,e,i,o,u]")) {
+                    substring1++;
+                } else {
+                    substring1 = 1;
+                }
+                //System.out.println("\n sub:" + substring1 + "\n");
+                matriz[j] = substring1;
             }
-            //System.out.println("\n sub:" + substring1 + "\n");
-            matriz[j] = substring1;
-        }
 
-        int mayor = matriz[0];
-        for (int k = 1; k < matriz.length; k++) {
-            int medio, fin;
-            medio = Integer.valueOf(matriz[k - 1]);
-            fin = Integer.valueOf(matriz[k]);
-            if (fin > mayor) {
-                mayor = fin;
+            int mayor = matriz[0];
+            for (int k = 1; k < matriz.length; k++) {
+                int medio, fin;
+                medio = Integer.valueOf(matriz[k - 1]);
+                fin = Integer.valueOf(matriz[k]);
+                if (fin > mayor) {
+                    mayor = fin;
+                }
+                System.out.println(mayor);
             }
-            System.out.println(mayor);
-        }
 
-        System.out.println("\n Mayor final " + mayor);
+            System.out.println("\n Mayor final " + mayor);
 
-        return mayor;
+            return mayor;
     }
 
     public static int[] solve2(int a, int b) {
@@ -441,5 +441,27 @@ We don't take care of a deposit of savings in a bank:-)
 
         return nbMonths2;
     }
+    public static int solve3(String s){
+        char[] cha = s.toCharArray();
+        int mayor=0;
+        int[] arr=new int[s.length()];
+
+        for(int i=0;i< cha.length;i++){
+
+            if(String.valueOf(cha[i]).matches("[0-9]")){
+                arr[i]=Integer.parseInt(String.valueOf(cha[i]));
+                System.out.println("numero : "+arr[i] + "\n");
+            }
+        }
+        mayor=arr[0];
+        for(int j=0;j<arr.length;j++){
+            if(arr[j]>mayor){
+                mayor=arr[j];
+            }
+        }
+        System.out.println("El numero mayor es: " + mayor+"\n");
+        return mayor;
+    }
+
 
 }
