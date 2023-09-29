@@ -448,20 +448,22 @@ We don't take care of a deposit of savings in a bank:-)
         int mayor = 0;
         int[] arr = new int[s.length()];
 
-        for (int i =0; i < cha.length; i++) {
+        for (int i =0; i <cha.length-1; i++) {
             if (String.valueOf(cha[i]).matches("[0-9]")){
-                for(int j=i;j<cha.length;j++){
-                    String a=String.valueOf(cha[j]);
-                    if(String.valueOf(cha[j]).matches("[0-9]")){
-                        a= a+ String.valueOf(cha[j]);
-                    }
-                    i=j;
-                    arr[i]=Integer.parseInt(a);
+                String a = String.valueOf(cha[i]);
+                int j=i+1;
+                while(String.valueOf(cha[j]).matches("[0-9]")) {
+                        a = a + String.valueOf(cha[j]);
+                        j++;
+
                 }
+                i = j;
+                arr[i] = Integer.parseInt(a);
+            }
 
 
                 System.out.println("numero : " + arr[i] + "\n");
-            }
+        }
 
             mayor = arr[0];
             for (int j = 0; j < arr.length; j++) {
@@ -469,8 +471,10 @@ We don't take care of a deposit of savings in a bank:-)
                     mayor = arr[j];
                 }
             }
+
             System.out.println("El numero mayor es: " + mayor + "\n");
-        }
         return mayor;
+        }
+
     }
-}
+

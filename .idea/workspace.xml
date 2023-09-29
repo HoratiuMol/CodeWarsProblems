@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="falta en caso de que sea un número de mas de 1 cifra">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="no consigo cerrar el fucking substring">
       <change beforePath="$PROJECT_DIR$/src/Kata2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kata2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PasamosMétodos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasamosMétodos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +54,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689634908240</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Perf">
-      <created>1694278486598</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1694278486598</updated>
     </task>
     <task id="LOCAL-00016" summary="Perf">
       <created>1694278564469</created>
@@ -400,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696017243239</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="no consigo cerrar el fucking substring">
+      <created>1696019836255</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1696019836255</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,7 +413,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CORRECTO&#10;POSIBLE OPTIMIZACION" />
     <MESSAGE value="revisar" />
     <MESSAGE value="ahora si! fallaba el bucle for al final de la comprobación de la matriz" />
     <MESSAGE value="Intento inicial" />
@@ -440,6 +437,7 @@
     <MESSAGE value="Perfceto. &#10;fallaba la asignación al &quot;String a&quot; ya que el string que nos pasaba estaba vacío, ergo no se puede asignar un string vacío a un char" />
     <MESSAGE value="suma de ahorros y gasto" />
     <MESSAGE value="falta en caso de que sea un número de mas de 1 cifra" />
-    <option name="LAST_COMMIT_MESSAGE" value="falta en caso de que sea un número de mas de 1 cifra" />
+    <MESSAGE value="no consigo cerrar el fucking substring" />
+    <option name="LAST_COMMIT_MESSAGE" value="no consigo cerrar el fucking substring" />
   </component>
 </project>
