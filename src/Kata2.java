@@ -450,9 +450,9 @@ We don't take care of a deposit of savings in a bank:-)
         int mayor = 0;
         int[] arr = new int[longitud];
 
-        for (int i =0; i <cha.length; i++) {
-            if (String.valueOf(cha[i]).matches("[0-9]")){
-               String a = String.valueOf(cha[i]);
+        for (int i =1; i <cha.length; i++) {
+            if (String.valueOf(cha[i-1]).matches("[0-9]")){
+               String a = String.valueOf(cha[i-1 ]);
                 int j=i+1;
                 while(String.valueOf(cha[j]).matches("[0-9]") && j<=cha.length) {
                         a = a + String.valueOf(cha[j]);
