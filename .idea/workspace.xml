@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="https://www.codewars.com/kata/59dd2c38f703c4ae5e000014/train/java">
-      <change beforePath="$PROJECT_DIR$/src/Kata2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kata2.java" afterDir="false" />
-    </list>
+    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="https://www.codewars.com/kata/59dd2c38f703c4ae5e000014/train/java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,13 +52,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689634908240</updated>
-    </task>
-    <task id="LOCAL-00019" summary="promedio ok">
-      <created>1694371608701</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1694371608701</updated>
     </task>
     <task id="LOCAL-00020" summary="Boolean.TRUE &amp;&amp; !=null //importante para evitar nulls">
       <created>1694541669300</created>
@@ -398,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696022959150</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="https://www.codewars.com/kata/59dd2c38f703c4ae5e000014/train/java">
+      <created>1696024300310</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1696024300310</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
