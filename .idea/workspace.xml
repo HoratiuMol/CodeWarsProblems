@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="https://www.codewars.com/kata/59dd2c38f703c4ae5e000014/train/java" />
+    <list default="true" id="d2c8de9f-f3ea-4e0d-af1a-d7ecff27bf5a" name="Changes" comment="https://www.codewars.com/kata/59dd2c38f703c4ae5e000014/train/java">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,13 +54,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689634908240</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Boolean.TRUE &amp;&amp; !=null //importante para evitar nulls">
-      <created>1694541669300</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1694541669300</updated>
     </task>
     <task id="LOCAL-00021" summary="Boolean.TRUE &amp;&amp; !=null //importante para evitar nulls">
       <created>1694543033762</created>
@@ -396,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696024300310</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="https://www.codewars.com/kata/59dd2c38f703c4ae5e000014/train/java">
+      <created>1696087373969</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1696087373969</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
