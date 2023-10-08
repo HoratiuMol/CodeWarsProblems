@@ -6,7 +6,7 @@ public class PasamosMétodos extends Kata2{
 
     public static void main(String[] args) {
 
-        String s="185lu1j8qbbb865";
+        String s="* *\n* *\n* *\n* *\n* *\n* *\n* *\n* *\n* *\n*A*";
         rainTacos(s);
 
     }

@@ -475,42 +475,8 @@ We don't take care of a deposit of savings in a bank:-)
         }
 
     public static String rainTacos(String landscape) {
-        double l=landscape.length();
-        String fin="a";
-        double nTaco=l/4;
-        int entera= (int) nTaco;
-        String[] cha=new String[landscape.length()];
 
-        System.out.println("necesitamos " + nTaco + " numero de Tacos");
-        System.out.println("la diferencia es de " + (1-nTaco) + " minitacos");
-        for(int i=1;i<=landscape.length();i++){
-
-
-
-        }
-
-        /*
-        for(int j=0;j<4;j++){
-                if(j==0){
-                    String str="T";
-                    cha[i]=str;
-                } else if ((j==1)) {
-                    String str="a";
-                    cha[i]=str;
-                } else if (j==2) {
-                    String str="c";
-                    cha[i]=str;
-                } else if (j==3) {
-                    String str="o";
-                    cha[i]=str;
-                }
-            }
-
-         */
-
-        System.out.println(fin);
-
-        return "sa";
+        return "A";
     }
 
 
