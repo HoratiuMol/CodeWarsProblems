@@ -475,6 +475,13 @@ We don't take care of a deposit of savings in a bank:-)
         }
 
     public static String rainTacos(String landscape) {
+        char[] cha=new char[landscape.length()];
+        char[] str=landscape.toCharArray();
+        for(int i=0;i<landscape.length();i++){
+            if(String.valueOf(str[i]).isBlank()){
+                System.out.println("Espacio\n");
+            }
+        }
 
         return "A";
     }
