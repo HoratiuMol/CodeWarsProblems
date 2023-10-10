@@ -475,17 +475,45 @@ We don't take care of a deposit of savings in a bank:-)
         }
 
     public static String rainTacos(String landscape) {
-        char[] cha=new char[landscape.length()];
-        char[] str=landscape.toCharArray();
-        for(int i=0;i<landscape.length();i++){
-            if(String.valueOf(str[i]).isBlank()){
-                System.out.println("Espacio\n");
+        String[] cha = new String[landscape.length()];
+        char[] str = landscape.toCharArray();
+
+        for (int i = 0; i < landscape.length(); i++) {
+            boolean blank = (str[i]==' ');
+            if (blank) {
+                double d = ((double) i + 1) / 4;
+                int enteraAbajo = (int) Math.floor(d);
+                double decimal = (d - enteraAbajo);
+
+                if (decimal == 0.25) {
+                    cha[i] = "T";
+                } else if (decimal == 0.5) {
+                    cha[i] = "A";
+                } else if (decimal == 0.75) {
+                    cha[i] = "C";
+                } else if (decimal == 1) {
+                    cha[i] = "O";
+                }
+            } else if (str[i]=='\n') {
+                cha[i]= String.valueOf('\n');
+
+            } else {
+                cha[i]=Character.toString(str[i]);
             }
+
         }
 
-        return "A";
-    }
+        String strFin = "";
+        for (int i = 0; i < cha.length; i++) {
+            if(cha[i].isBlank()){
+                strFin+="O";
+            }
+            System.out.println(cha[i]);
+            strFin += cha[i]; // Concatenate the values
+        }
 
-
+        System.out.println(strFin);
+        return strFin;
     }
+}
 
